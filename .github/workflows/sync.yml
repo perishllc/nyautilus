@@ -2,8 +2,7 @@ name: 'Upstream Sync'
 
 on:
   schedule:
-    - cron:  '0 7 * * 1,4'
-    # scheduled at 07:00 every Monday and Thursday
+    - cron: '*/30 * * * *' # every 30 minutes
 
   workflow_dispatch:  # click the button on Github repo!
 
