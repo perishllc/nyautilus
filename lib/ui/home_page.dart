@@ -172,8 +172,8 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
     minLaunches: 5,
     remindDays: 7,
     remindLaunches: 5,
-    googlePlayIdentifier: 'co.perish.nautiluswallet',
-    appStoreIdentifier: '1615775960',
+    googlePlayIdentifier: 'co.perish.nyautilus',
+    appStoreIdentifier: '6444747598',
   );
 
   // confetti:
