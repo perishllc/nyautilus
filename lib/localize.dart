@@ -99,7 +99,7 @@ class NonTranslatable {
   }
 
   static String get nautilus {
-    return "Nautilus";
+    return "Nyautilus";
   }
 
   static String get nano {

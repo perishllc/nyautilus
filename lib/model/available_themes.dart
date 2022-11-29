@@ -38,7 +38,7 @@ class ThemeSetting extends SettingSelectionItem {
         return "Perishable";
       case ThemeOptions.NAUTILUS:
       default:
-        return "Nautilus";
+        return "Nyautilus";
     }
   }
 
