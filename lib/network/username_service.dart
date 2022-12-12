@@ -39,14 +39,14 @@ import 'package:web3dart/web3dart.dart';
 import 'package:web_socket_channel/io.dart';
 
 // rust libs:
-const String libbase = "nano_username_registration";
+const String libbase = "perish";
 final String path = Platform.isWindows ? "$libbase.dll" : "lib$libbase.so";
 final DynamicLibrary dylib = Platform.isIOS
     ? DynamicLibrary.process()
     : Platform.isMacOS
         ? DynamicLibrary.executable()
         : DynamicLibrary.open(path);
-final NanoUsernameRegistrationImpl api = NanoUsernameRegistrationImpl(dylib);
+final PerishImpl api = PerishImpl(dylib);
 
 late Web3Client _web3Client;
 late Ens ens;
@@ -63,21 +63,11 @@ class UsernameService {
 
   // Constructor
   UsernameService() {
-    initCommunication();
     if (kDebugMode) {
       USERNAME_SPACE = "username_registration_test";
     }
+    initCommunication();
   }
-
-  // Server Connection Strings
-  static String BASE_SERVER_ADDRESS = "nautilus.perish.co";
-  // static const String DEV_SERVER_ADDRESS = "node-local.perish.co:5076";
-  static const String DEV_SERVER_ADDRESS = "35.139.167.170:5076";
-  static String HTTP_PROTO = "https://";
-  static String WS_PROTO = "wss://";
-
-  static String RPC_URL = "nautilus.perish.co";
-  static String WS_URL = "nautilus.perish.co";
 
   // auth:
   static String AUTH_SERVER = "https://auth.perish.co";
