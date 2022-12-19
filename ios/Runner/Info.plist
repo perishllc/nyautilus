@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Nautilus</string>
+	<string>Nyautilus</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIconName</key>
@@ -44,10 +44,11 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>co.perish.nautilus</string>
+			<string>co.perish.nyautilus</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>nautilus</string>
+				<string>nyautilus</string>
 				<string>xrb</string>
 				<string>nano</string>
 				<string>manta</string>
