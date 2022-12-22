@@ -130,12 +130,17 @@
     "type": "text",
     "description": "send_enter_amount"
   },
+  "appWallet": "%1 Wallet",
+  "@appWallet": {
+    "type": "text",
+    "description": "app_wallet"
+  },
   "asked": "Asked",
   "@asked": {
     "type": "text",
     "description": "home_asked_cta"
   },
-  "askSkipSetup": "We noticed you clicked on a link that contains some nano, would you like to skip the setup process? You can always change things later.\n\n If you have an existing seed that you want to import however, you should select no.",
+  "askSkipSetup": "We noticed you clicked on a link that contains some %2, would you like to skip the setup process? You can always change things later.\n\n If you have an existing seed that you want to import however, you should select no.",
   "@askSkipSetup": {
     "type": "text",
     "description": "prompt_skip_setup"
@@ -403,7 +408,7 @@
   "connectingHeader": "Connecting",
   "@connectingHeader": {
     "type": "text",
-    "description": "A header to let the user now that the app is currently connecting to (or loading) live chat."
+    "description": "A header to let the user now that Nautilus is currently connecting to (or loading) live chat."
   },
   "connectionWarning": "Can't Connect",
   "@connectionWarning": {
@@ -620,7 +625,7 @@
     "type": "text",
     "description": "Default account name"
   },
-  "defaultGiftMessage": "Check out %1! I sent you some nano with this link:",
+  "defaultGiftMessage": "Check out %1! I sent you some %2 with this link:",
   "@defaultGiftMessage": {
     "type": "text",
     "description": "default_gift_message"
@@ -885,6 +890,11 @@
     "type": "text",
     "description": "example_rec_recipient_message"
   },
+  "exchangeCurrency": "Exchange %2",
+  "@exchangeCurrency": {
+    "type": "text",
+    "description": "exchange_currency"
+  },
   "exchangeNano": "Exchange NANO",
   "@exchangeNano": {
     "type": "text",
@@ -1015,6 +1025,11 @@
     "type": "text",
     "description": "funding_header"
   },
+  "getCurrency": "Get %2",
+  "@getCurrency": {
+    "type": "text",
+    "description": "get_currency"
+  },
   "getNano": "Get NANO",
   "@getNano": {
     "type": "text",
@@ -1055,7 +1070,7 @@
     "type": "text",
     "description": "gift_from"
   },
-  "giftInfo": "Load a Digital Gift Card with NANO! Set an amount, and an optional message for the recipient to see when they open it!\n\nOnce created, you'll get a link that you can send to anyone, which when opened will automatically distribute the funds to the recipient after installing %1!\n\nIf the recipient is already a %1 user they'll get a prompt to transfer the funds into their account upon opening the link\n\nYou can also set a split amount to distribute from the gift card rather than the entire balance.",
+  "giftInfo": "Load a Digital Gift Card with %2! Set an amount, and an optional message for the recipient to see when they open it!\n\nOnce created, you'll get a link that you can send to anyone, which when opened will automatically distribute the funds to the recipient after installing %1!\n\nIf the recipient is already a %1 user they'll get a prompt to transfer the funds into their account upon opening the link\n\nYou can also set a split amount to distribute from the gift card rather than the entire balance.",
   "@giftInfo": {
     "type": "text",
     "description": "Description for gift card creation"
@@ -1170,22 +1185,22 @@
     "type": "text",
     "description": "Generic import"
   },
-  "importGift": "The link you clicked contains some nano, would you like to import it to this wallet, or refund it to whoever sent it?",
+  "importGift": "The link you clicked contains some %2, would you like to import it to this wallet, or refund it to whoever sent it?",
   "@importGift": {
     "type": "text",
     "description": "import_gift"
   },
-  "importGiftEmpty": "Unfortunately the link you clicked that contained some nano appears to be empty, but you can still see the amount and associated message.",
+  "importGiftEmpty": "Unfortunately the link you clicked that contained some %2 appears to be empty, but you can still see the amount and associated message.",
   "@importGiftEmpty": {
     "type": "text",
     "description": "import_gift_empty"
   },
-  "importGiftIntro": "It looks like you clicked a link that contains some NANO, in order to receive these funds we just need for you to finish setting up your wallet.",
+  "importGiftIntro": "It looks like you clicked a link that contains some %2, in order to receive these funds we just need for you to finish setting up your wallet.",
   "@importGiftIntro": {
     "type": "text",
     "description": "import_gift_intro"
   },
-  "importGiftv2": "The link you clicked contains some NANO, would you like to import it to this wallet?",
+  "importGiftv2": "The link you clicked contains some %2, would you like to import it to this wallet?",
   "@importGiftv2": {
     "type": "text",
     "description": "import_gift_v2"
@@ -1455,10 +1470,10 @@
     "type": "text",
     "description": "natricon_settings"
   },
-  "appWallet": "%1 Wallet",
-  "@appWallet": {
+  "nautilusWallet": "Nautilus Wallet",
+  "@nautilusWallet": {
     "type": "text",
-    "description": "app_wallet"
+    "description": "nautilus_wallet"
   },
   "nearby": "Nearby",
   "@nearby": {
@@ -1475,7 +1490,7 @@
     "type": "text",
     "description": "verification_needed_header"
   },
-  "newAccountIntro": "This is your new account. Once you receive NANO, transactions will show up like this:",
+  "newAccountIntro": "This is your new account. Once you receive %2, transactions will show up like this:",
   "@newAccountIntro": {
     "type": "text",
     "description": "Alternate account intro card"
@@ -1683,7 +1698,7 @@
   "passwordNoLongerRequiredToOpenParagraph": "You will not need a password to open %1 anymore.",
   "@passwordNoLongerRequiredToOpenParagraph": {
     "type": "text",
-    "description": "An info paragraph that tells the user a password will no longer be needed to open the app"
+    "description": "An info paragraph that tells the user a password will no longer be needed to open Nautilus"
   },
   "passwordNumber": "Password must contain at least 1 number",
   "@passwordNumber": {
@@ -1713,7 +1728,7 @@
   "passwordWillBeRequiredToOpenParagraph": "This password will be required to open %1.",
   "@passwordWillBeRequiredToOpenParagraph": {
     "type": "text",
-    "description": "A paragraph that tells the users that the created password will be required to open the app."
+    "description": "A paragraph that tells the users that the created password will be required to open Nautilus."
   },
   "pay": "Pay",
   "@pay": {
@@ -1820,7 +1835,7 @@
     "type": "text",
     "description": "settings_privacy_policy"
   },
-  "promotionalLink": "Free NANO",
+  "promotionalLink": "Free %2",
   "@promotionalLink": {
     "type": "text",
     "description": "promo_Link"
@@ -1834,6 +1849,11 @@
   "@proSubRequiredParagraph": {
     "type": "text",
     "description": "pro_sub_required_paragraph"
+  },
+  "purchaseCurrency": "Purchase %2",
+  "@purchaseCurrency": {
+    "type": "text",
+    "description": "purchase_currency"
   },
   "purchaseNano": "Purchase Nano",
   "@purchaseNano": {
@@ -2073,7 +2093,7 @@
   "requireAPasswordToOpenHeader": "Require a password to open %1?",
   "@requireAPasswordToOpenHeader": {
     "type": "text",
-    "description": "A paragraph that asks the users if they would like a password to be required to open the app."
+    "description": "A paragraph that asks the users if they would like a password to be required to open Nautilus."
   },
   "requireCaptcha": "Require CAPTCHA to claim gift card",
   "@requireCaptcha": {
@@ -2115,7 +2135,7 @@
     "type": "text",
     "description": "Shown to users if they have a rooted Android device or jailbroken iOS device"
   },
-  "scanInstructions": "Scan a Nano \naddress QR code",
+  "scanInstructions": "Scan a %2 \naddress QR code",
   "@scanInstructions": {
     "type": "text",
     "description": "scan_send_instruction_label"
@@ -2348,7 +2368,17 @@
   "share": "Share",
   "@share": {
     "type": "text",
-    "description": "app_share"
+    "description": "nautilus_share"
+  },
+  "shareApp": "Share %1",
+  "@shareApp": {
+    "type": "text",
+    "description": "settings_share"
+  },
+  "shareAppText": "Check out %1! A premier %2 mobile wallet!",
+  "@shareAppText": {
+    "type": "text",
+    "description": "share_extra"
   },
   "shareLink": "Share Link",
   "@shareLink": {
@@ -2360,13 +2390,13 @@
     "type": "text",
     "description": "share_message"
   },
-  "shareApp": "Share %1",
-  "@shareApp": {
+  "shareNautilus": "Share Nautilus",
+  "@shareNautilus": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareAppText": "Check out %1! A premier NANO mobile wallet!",
-  "@shareAppText": {
+  "shareNautilusText": "Check out Nautilus! A premier NANO mobile wallet!",
+  "@shareNautilusText": {
     "type": "text",
     "description": "share_extra"
   },
@@ -2450,6 +2480,11 @@
     "type": "text",
     "description": "send_someone"
   },
+  "spendCurrency": "Spend %2",
+  "@spendCurrency": {
+    "type": "text",
+    "description": "spend_currency"
+  },
   "spendNano": "Spend NANO",
   "@spendNano": {
     "type": "text",
@@ -2525,7 +2560,7 @@
     "type": "text",
     "description": "swap_xmr_header"
   },
-  "swapXMRInfo": "Monero is a privacy-focused cryptocurrency that makes it very hard or even impossible to trace transactions. Meanwhile NANO is a payments-focused cryptocurrency that is fast and fee-less. Together they provide some of the most useful aspects of cryptocurrencies!\n\nUse this page to easily swap your NANO for XMR!",
+  "swapXMRInfo": "Monero is a privacy-focused cryptocurrency that makes it very hard or even impossible to trace transactions. Meanwhile %2 is a payments-focused cryptocurrency that is fast and fee-less. Together they provide some of the most useful aspects of cryptocurrencies!\n\nUse this page to easily swap your %2 for XMR!",
   "@swapXMRInfo": {
     "type": "text",
     "description": "swap_xmr_header"
@@ -2610,7 +2645,7 @@
     "type": "text",
     "description": "transfer_close_text"
   },
-  "transferComplete": "%1 %2 successfully transferred to your %1 Wallet.\n",
+  "transferComplete": "%1 %2 successfully transferred to your %3 Wallet.\n",
   "@transferComplete": {
     "type": "text",
     "description": "transfer_complete_text"
@@ -2640,7 +2675,7 @@
     "type": "text",
     "description": "transfer_header"
   },
-  "transferIntro": "This process will transfer the funds from a paper wallet to your %1 wallet.\n\nTap the \"%1\" button to start.",
+  "transferIntro": "This process will transfer the funds from a paper wallet to your %2 wallet.\n\nTap the \"%1\" button to start.",
   "@transferIntro": {
     "type": "text",
     "description": "transfer_intro"
@@ -2660,7 +2695,7 @@
     "type": "text",
     "description": "transfer_hint"
   },
-  "transferNoFunds": "This seed does not have any NANO on it",
+  "transferNoFunds": "This seed does not have any %2 on it",
   "@transferNoFunds": {
     "type": "text",
     "description": "transfer_no_funds_toast"
@@ -2670,7 +2705,7 @@
     "type": "text",
     "description": "transfer_qr_scan_error"
   },
-  "transferQrScanHint": "Scan a Nano \nseed or private key",
+  "transferQrScanHint": "Scan a %2 \nseed or private key",
   "@transferQrScanHint": {
     "type": "text",
     "description": "transfer_qr_scan_hint"
@@ -2745,15 +2780,25 @@
     "type": "text",
     "description": "url_empty"
   },
+  "useAppRep": "Use %1 Rep",
+  "@useAppRep": {
+    "type": "text",
+    "description": "use app node as rep"
+  },
+  "useCurrency": "Use %2",
+  "@useCurrency": {
+    "type": "text",
+    "description": "use_currency"
+  },
   "useNano": "Use NANO",
   "@useNano": {
     "type": "text",
     "description": "use_nano"
   },
-  "useAppRep": "Use %1 Rep",
-  "@useAppRep": {
+  "useNautilusRep": "Use Nautilus Rep",
+  "@useNautilusRep": {
     "type": "text",
-    "description": "use app node as rep"
+    "description": "use nautilus node as rep"
   },
   "userAlreadyAddedError": "User already added!",
   "@userAlreadyAddedError": {
