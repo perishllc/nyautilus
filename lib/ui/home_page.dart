@@ -64,6 +64,7 @@ import 'package:wallet_flutter/ui/shop/shop_sheet.dart';
 import 'package:wallet_flutter/ui/subs/subs_sheet.dart';
 import 'package:wallet_flutter/ui/transfer/transfer_overview_sheet.dart';
 import 'package:wallet_flutter/ui/util/formatters.dart';
+import 'package:wallet_flutter/ui/util/handlebars.dart';
 import 'package:wallet_flutter/ui/util/routes.dart';
 import 'package:wallet_flutter/ui/util/ui_util.dart';
 import 'package:wallet_flutter/ui/widgets/animations.dart';
@@ -3401,15 +3402,7 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
             ),
             // handle bars:
             if (slideEnabled)
-              Container(
-                width: 4,
-                height: 30,
-                margin: const EdgeInsets.only(right: 22),
-                decoration: BoxDecoration(
-                  color: StateContainer.of(context).curTheme.text45,
-                  borderRadius: BorderRadius.circular(12),
-                ),
-              ),
+              Handlebars.vertical(context),
           ],
         ),
       ),
