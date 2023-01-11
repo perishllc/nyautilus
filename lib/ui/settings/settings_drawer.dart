@@ -35,6 +35,7 @@ import 'package:wallet_flutter/model/db/account.dart';
 import 'package:wallet_flutter/model/db/appdb.dart';
 import 'package:wallet_flutter/model/db/node.dart';
 import 'package:wallet_flutter/model/db/txdata.dart';
+import 'package:wallet_flutter/model/db/work_source.dart';
 import 'package:wallet_flutter/model/device_lock_timeout.dart';
 import 'package:wallet_flutter/model/device_unlock_option.dart';
 import 'package:wallet_flutter/model/funding_setting.dart';
@@ -57,6 +58,7 @@ import 'package:wallet_flutter/ui/settings/magic/change_magic_seed_sheet.dart';
 import 'package:wallet_flutter/ui/settings/node/change_node_sheet.dart';
 import 'package:wallet_flutter/ui/settings/password/set_pin_sheet.dart';
 import 'package:wallet_flutter/ui/settings/password/set_plausible_pin_sheet.dart';
+import 'package:wallet_flutter/ui/settings/pow/change_work_source_sheet.dart';
 import 'package:wallet_flutter/ui/settings/rep/changerepresentative_sheet.dart';
 import 'package:wallet_flutter/ui/settings/settings_list_item.dart';
 import 'package:wallet_flutter/ui/settings/users/blocked_widget.dart';
@@ -1860,14 +1862,14 @@ class SettingsSheetState extends State<SettingsSheet> with TickerProviderStateMi
                                   height: 45,
                                   alignment: AlignmentDirectional.centerStart,
                                   child: Icon(
-                                    StateContainer.of(context).wallet!.watchOnly
+                                    (StateContainer.of(context).wallet?.watchOnly ?? false)
                                         ? AppIcons.search
                                         : AppIcons.accountwallet,
                                     color: StateContainer.of(context).curTheme.success,
                                     size: 45,
                                   )),
                             ),
-                            if (!StateContainer.of(context).wallet!.watchOnly)
+                            if (!(StateContainer.of(context).wallet?.watchOnly ?? false))
                               Center(
                                 child: Container(
                                   width: 60,
@@ -2161,7 +2163,7 @@ class SettingsSheetState extends State<SettingsSheet> with TickerProviderStateMi
                           // Main account address
                           Text(
                             StateContainer.of(context).wallet?.username ??
-                                Address(StateContainer.of(context).wallet!.address).getShortFirstPart() ??
+                                Address(StateContainer.of(context).wallet?.address).getShortFirstPart() ??
                                 "",
                             style: TextStyle(
                               fontFamily: "OverpassMono",
@@ -2543,6 +2545,15 @@ class SettingsSheetState extends State<SettingsSheet> with TickerProviderStateMi
                         Sheets.showAppHeightNineSheet(
                           context: context,
                           widget: ChangeNodeSheet(nodes: nodes),
+                        );
+                      }),
+                      Divider(height: 2, color: StateContainer.of(context).curTheme.text15),
+                      AppSettings.buildSettingsListItemSingleLine(context, Z.of(context).changePowSource, Icons.bolt,
+                          onPressed: () async {
+                        final List<WorkSource> workSources = await sl.get<DBHelper>().getWorkSources();
+                        Sheets.showAppHeightNineSheet(
+                          context: context,
+                          widget: ChangePowSheet(workSources: workSources),
                         );
                       }),
                       Divider(height: 2, color: StateContainer.of(context).curTheme.text15),
