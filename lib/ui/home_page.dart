@@ -48,6 +48,7 @@ import 'package:wallet_flutter/network/model/response/alerts_response_item.dart'
 import 'package:wallet_flutter/network/model/response/auth_item.dart';
 import 'package:wallet_flutter/network/model/response/pay_item.dart';
 import 'package:wallet_flutter/network/model/status_types.dart';
+import 'package:wallet_flutter/network/subscription_service.dart';
 import 'package:wallet_flutter/network/username_service.dart';
 import 'package:wallet_flutter/service_locator.dart';
 import 'package:wallet_flutter/styles.dart';
@@ -176,8 +177,8 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
     minLaunches: 5,
     remindDays: 7,
     remindLaunches: 5,
-    googlePlayIdentifier: 'co.perish.nyautilus',
-    appStoreIdentifier: '6444747598',
+    googlePlayIdentifier: "co.perish.nyautilus",
+    appStoreIdentifier: "6444747598",
   );
 
   // confetti:
@@ -223,6 +224,12 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
         alert: true,
         provisional: true,
       );
+      // await AwesomeNotifications().requestPermissionToSendNotifications(
+      //   sound: true,
+      //   badge: true,
+      //   alert: true,
+      //   provisional: true,
+      // );
       if (settings.alert == AppleNotificationSetting.enabled ||
           settings.badge == AppleNotificationSetting.enabled ||
           settings.sound == AppleNotificationSetting.enabled ||
@@ -895,7 +902,12 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
       }
 
       // check on subscriptions:
-      // todo:
+      // must be done post-load since we need to check history:
+      if (!mounted) return;
+      Future<void>.delayed(const Duration(seconds: 5), () async {
+        if (!mounted) return;
+        await sl.get<SubscriptionService>().checkAreSubscriptionsPaid(context);
+      });
     });
     // confetti:
     _confettiControllerLeft = ConfettiController(duration: const Duration(milliseconds: 150));
@@ -3609,7 +3621,7 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
     // final String displayName = txDetails.getShortestString(isRecipient) ?? "";
     final String account = txDetails.getAccount(isRecipient);
     String displayName = "${account.substring(0, 9)}\n...${account.substring(account.length - 6)}";
-    // // check if there's a username:
+    // check if there's a username:
     for (final User user in _users) {
       if (user.address == account) {
         displayName = user.getDisplayName()!;
