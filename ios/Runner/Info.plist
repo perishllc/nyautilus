@@ -141,5 +141,20 @@
 		<string>test-app.nautilus.io</string>
 		<string>nautilus-alternate.test-app.link</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>localhost</key>
+			<dict>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+		<key>NSAllowsLocalNetworking</key><true/>
+		<key>NSAllowsArbitraryLoadsInWebContent</key><true/>
+	</dict>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
 </dict>
 </plist>
