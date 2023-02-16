@@ -191,15 +191,15 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
   late ConfettiController _confettiControllerLeft;
   late ConfettiController _confettiControllerRight;
 
-  // receive disabled?:
-  bool _receiveDisabled = false;
-  bool _xmrSRDisabled = true;
   String _currentMode = "nano";
 
-  int _selectedIndex = 1;
+  int _selectedIndex = 0;
 
   bool _isPro = false;
   List<Subscription> _subscriptions = [];
+  
+  // make the connection warning less annoying:
+  Timer? _connectionTimer;
 
   Future<void> _switchToAccount(String account) async {
     final List<Account> accounts = await sl.get<DBHelper>().getAccounts(await StateContainer.of(context).getSeed());
@@ -754,31 +754,6 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
           _currentMode = mode;
         });
         EventTaxiImpl.singleton().fire(XMREvent(type: "mode_change", message: mode));
-      }
-
-      if (_currentMode == "nano") {
-        if (!_receiveDisabled) {
-          if (StateContainer.of(context).wallet?.address == null ||
-              StateContainer.of(context).wallet!.address!.isEmpty) {
-            setState(() {
-              _receiveDisabled = true;
-            });
-          }
-        } else {
-          if (StateContainer.of(context).wallet?.address != null &&
-              StateContainer.of(context).wallet!.address!.isNotEmpty) {
-            setState(() {
-              _receiveDisabled = false;
-            });
-          }
-        }
-      } else if (_currentMode == "monero") {
-        if (!_xmrSRDisabled && StateContainer.of(context).xmrAddress.isEmpty ||
-            _xmrSRDisabled && StateContainer.of(context).xmrAddress.isNotEmpty) {
-          setState(() {
-            _xmrSRDisabled = !_xmrSRDisabled;
-          });
-        }
       }
     });
     // Setup placeholder animation and start
@@ -1339,9 +1314,14 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
     // listen to connection events:
     _connectionSub = EventTaxiImpl.singleton().registerTo<ConnStatusEvent>().listen((ConnStatusEvent event) {
       if (event.status == ConnectionStatus.CONNECTED) {
+        // cancel the timer, if it's still running:
+        _connectionTimer?.cancel();
         showConnectionWarning(false);
       } else if (event.status == ConnectionStatus.DISCONNECTED) {
-        showConnectionWarning(true);
+        // start a timer, if it expires, show the warning:
+        _connectionTimer = Timer(const Duration(seconds: 8), () {
+          showConnectionWarning(true);
+        });
       }
     });
     _subscriptionsSub = EventTaxiImpl.singleton().registerTo<SubsChangedEvent>().listen((SubsChangedEvent event) {
@@ -2309,22 +2289,6 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
   }
 
   Widget _buildMainColumnView(BuildContext context) {
-    if (_currentMode == "nano") {
-      if (_receiveDisabled &&
-          StateContainer.of(context).wallet?.address != null &&
-          StateContainer.of(context).wallet!.address!.isNotEmpty) {
-        setState(() {
-          _receiveDisabled = false;
-        });
-      }
-    }
-    if (_currentMode == "monero") {
-      if (_xmrSRDisabled && StateContainer.of(context).xmrAddress.isNotEmpty) {
-        setState(() {
-          _xmrSRDisabled = false;
-        });
-      }
-    }
     return Column(
       children: <Widget>[
         Expanded(
@@ -2484,12 +2448,9 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
                       child: TextButton(
                         key: const Key("home_receive_button"),
                         style: TextButton.styleFrom(
-                          backgroundColor: !_receiveDisabled
-                              ? StateContainer.of(context).curTheme.primary
-                              : StateContainer.of(context).curTheme.primary60,
+                          backgroundColor: StateContainer.of(context).curTheme.primary,
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppButton.BORDER_RADIUS)),
-                          foregroundColor:
-                              !_receiveDisabled ? StateContainer.of(context).curTheme.background40 : Colors.transparent,
+                          foregroundColor: StateContainer.of(context).curTheme.background40,
                         ),
                         child: AutoSizeText(
                           Z.of(context).request,
@@ -2499,10 +2460,6 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
                           stepGranularity: 0.5,
                         ),
                         onPressed: () async {
-                          if (_receiveDisabled) {
-                            return;
-                          }
-
                           final String data =
                               "${NonTranslatable.currencyUriPrefix}:${StateContainer.of(context).wallet!.address}";
                           final Widget qrWidget = SizedBox(
@@ -2557,12 +2514,9 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
                       child: TextButton(
                         key: const Key("home_receive_button"),
                         style: TextButton.styleFrom(
-                          backgroundColor: !_xmrSRDisabled
-                              ? StateContainer.of(context).curTheme.primary
-                              : StateContainer.of(context).curTheme.primary60,
+                          backgroundColor: StateContainer.of(context).curTheme.primary,
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppButton.BORDER_RADIUS)),
-                          foregroundColor:
-                              !_xmrSRDisabled ? StateContainer.of(context).curTheme.background40 : Colors.transparent,
+                          foregroundColor: StateContainer.of(context).curTheme.background40,
                         ),
                         child: AutoSizeText(
                           Z.of(context).receive,
@@ -2572,9 +2526,6 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
                           stepGranularity: 0.5,
                         ),
                         onPressed: () async {
-                          if (_xmrSRDisabled) {
-                            return;
-                          }
 
                           final String data = "monero:${StateContainer.of(context).xmrAddress}";
                           final Widget qrWidget = SizedBox(
@@ -2593,7 +2544,7 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
                         },
                       ),
                     ),
-                    AppPopupButton(moneroEnabled: true, enabled: !_xmrSRDisabled),
+                    AppPopupButton(moneroEnabled: true),
                   ],
                 ),
 
