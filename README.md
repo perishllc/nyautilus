@@ -1,4 +1,4 @@
-# Nyautilus Wallet
+# Nautilus Wallet
 
 ![Cover](/assets/banner.png)
 

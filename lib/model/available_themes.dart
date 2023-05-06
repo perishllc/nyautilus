@@ -40,7 +40,7 @@ class ThemeSetting extends SettingSelectionItem {
         return "Potassius";
       case ThemeOptions.NAUTILUS:
       default:
-        return "Nyautilus";
+        return "Nautilus";
     }
   }
 
