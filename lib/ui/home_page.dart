@@ -70,6 +70,7 @@ import 'package:wallet_flutter/ui/shop/shop_sheet.dart';
 import 'package:wallet_flutter/ui/subs/sub_confirm_sheet.dart';
 import 'package:wallet_flutter/ui/subs/subs_sheet.dart';
 import 'package:wallet_flutter/ui/transfer/transfer_overview_sheet.dart';
+import 'package:wallet_flutter/ui/upcoming/upcoming_sheet.dart';
 import 'package:wallet_flutter/ui/util/formatters.dart';
 import 'package:wallet_flutter/ui/util/handlebars.dart';
 import 'package:wallet_flutter/ui/util/routes.dart';
@@ -2193,14 +2194,20 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
   Widget _buildBottomNavigationBar(BuildContext context) {
     int unpaidSubCount = 0;
     int scheduledCount = 0;
+    int upcomingCount = 0;
     for (final Subscription sub in _subscriptions) {
       if (sub.active && !sub.paid) {
         unpaidSubCount++;
+        upcomingCount++;
       }
     }
     for (final Scheduled scheduled in _scheduled) {
       if (scheduled.active) {
-        scheduledCount++;
+        // check if scheduled time is in the past:
+        if (scheduled.timestamp < DateTime.now().millisecondsSinceEpoch ~/ 1000) {
+          scheduledCount++;
+          upcomingCount++;
+        }
       }
     }
     return Container(
@@ -2229,28 +2236,28 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
             //   backgroundColor: StateContainer.of(context).curTheme.warning,
             // ),
             BottomNavigationBarItem(
-              icon: const Icon(Icons.home),
-              label: Z.of(context).homeButton,
-              backgroundColor: StateContainer.of(context).curTheme.backgroundDark,
-            ),
-            BottomNavigationBarItem(
               icon: Badge(
-                isLabelVisible: scheduledCount > 0,
-                label: Text("$scheduledCount", style: const TextStyle(color: Colors.white)),
+                isLabelVisible: upcomingCount > 0,
+                label: Text("$upcomingCount", style: const TextStyle(color: Colors.white)),
                 child: const Icon(Icons.schedule),
               ),
               label: Z.of(context).scheduledButton,
               backgroundColor: StateContainer.of(context).curTheme.warning,
             ),
             BottomNavigationBarItem(
-              icon: Badge(
-                isLabelVisible: unpaidSubCount > 0,
-                label: Text("$unpaidSubCount", style: const TextStyle(color: Colors.white)),
-                child: const Icon(Icons.currency_exchange),
-              ),
-              label: Z.of(context).subsButton,
-              backgroundColor: StateContainer.of(context).curTheme.warning,
+              icon: const Icon(Icons.home),
+              label: Z.of(context).homeButton,
+              backgroundColor: StateContainer.of(context).curTheme.backgroundDark,
             ),
+            // BottomNavigationBarItem(
+            //   icon: Badge(
+            //     isLabelVisible: unpaidSubCount > 0,
+            //     label: Text("$unpaidSubCount", style: const TextStyle(color: Colors.white)),
+            //     child: const Icon(Icons.currency_exchange),
+            //   ),
+            //   label: Z.of(context).subsButton,
+            //   backgroundColor: StateContainer.of(context).curTheme.warning,
+            // ),
             // BottomNavigationBarItem(
             //   icon: const Icon(Icons.business),
             //   label: Z.of(context).businessButton,
@@ -2266,11 +2273,11 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
           selectedItemColor: StateContainer.of(context).curTheme.primary,
           unselectedItemColor: StateContainer.of(context).curTheme.text,
           onTap: (int index) async {
-            const int HOME_INDEX = 0;
+            const int HOME_INDEX = 1;
             const int SHOP_INDEX = 9;
-            const int SUBS_INDEX = 2;
-            const int SCHEDULED_INDEX = 1;
-            const int SETTINGS_INDEX = 3;
+            const int SUBS_INDEX = 0;
+            const int SCHEDULED_INDEX = 9;
+            const int SETTINGS_INDEX = 2;
             const int BUSINESS_INDEX = 9;
 
             // special case for when you double tap home, scroll to the top:
@@ -2291,13 +2298,14 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
               switch (index) {
                 case SUBS_INDEX:
                   final List<Subscription> subs = await sl.get<DBHelper>().getSubscriptions();
-                  // final List<Scheduled> scheduled = await sl.get<DBHelper>().getScheduled();
+                  final List<Scheduled> scheduled = await sl.get<DBHelper>().getScheduled();
                   if (!mounted) return;
                   await Sheets.showAppHeightNineSheet(
                     context: context,
                     barrier: Colors.transparent,
-                    widget: SubsSheet(
+                    widget: UpcomingSheet(
                       subs: subs,
+                      scheduled: scheduled,
                     ),
                   );
                   break;
@@ -2335,15 +2343,15 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
                     allowSlide: true,
                   );
                   break;
-                case SCHEDULED_INDEX:
-                  // await Sheets.showAppHeightNineSheet(
-                  //   context: context,
-                  //   barrier: Colors.transparent,
-                  //   widget: ScheduledSheet(
-                  //     scheduled: scheduled,
-                  //   ),
-                  // );
-                  break;
+                // case SCHEDULED_INDEX:
+                //   // await Sheets.showAppHeightNineSheet(
+                //   //   context: context,
+                //   //   barrier: Colors.transparent,
+                //   //   widget: ScheduledSheet(
+                //   //     scheduled: scheduled,
+                //   //   ),
+                //   // );
+                //   break;
               }
 
               // return to home:
