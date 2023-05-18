@@ -154,7 +154,6 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
   int _maxHistItems = 100;
   int _trueMaxHistItems = 10000;
   bool _loadingMore = false;
-  late TabController _tabController;
 
   bool _isRefreshing = false;
   bool _lockDisabled = false; // whether we should avoid locking the app
@@ -1327,7 +1326,6 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
     WidgetsBinding.instance.removeObserver(this);
     // _scrollController.removeListener(_scrollListener);
     _scrollController.dispose();
-    _tabController.dispose();
     _placeholderCardAnimationController.dispose();
     _loadMoreAnimationController.dispose();
     // confetti:
@@ -1936,7 +1934,7 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
       final User? user = await sl.get<DBHelper>().getUserOrContactWithAddress(address.address!);
       // Remove any other screens from stack
       if (!mounted) return;
-      Navigator.of(context).popUntil(RouteUtils.withNameLike('/home'));
+      Navigator.of(context).popUntil(RouteUtils.withNameLike("/home"));
       if (amount != null && sufficientBalance) {
         // Go to send confirm with amount
         Sheets.showAppHeightNineSheet(
@@ -2239,7 +2237,7 @@ class AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver, T
                 label: Text("$upcomingCount", style: const TextStyle(color: Colors.white)),
                 child: const Icon(Icons.schedule),
               ),
-              label: Z.of(context).scheduledButton,
+              label: Z.of(context).upcomingButton,
               backgroundColor: StateContainer.of(context).curTheme.warning,
             ),
             BottomNavigationBarItem(
