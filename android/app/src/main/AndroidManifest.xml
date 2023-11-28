@@ -21,7 +21,7 @@
          additional functionality it is fine to subclass or reimplement
          FlutterApplication and put your custom class here. -->
     <!-- android:enableOnBackInvokedCallback="true" -->
-    <application android:usesCleartextTraffic="true" android:name=".MultidexApplication" android:label="Nautilus" android:icon="@mipmap/ic_launcher" android:allowBackup="false">
+    <application android:usesCleartextTraffic="true" android:name=".MultidexApplication" android:label="Nyautilus" android:icon="@mipmap/ic_launcher" android:allowBackup="false">
         <meta-data android:name="flutterEmbedding" android:value="2" />
 
         <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
