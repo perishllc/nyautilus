@@ -1,4 +1,4 @@
-package co.perish.nautiluswallet;
+package co.perish.nyautilus;
 
 import android.util.Base64;
 

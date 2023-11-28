@@ -163,8 +163,8 @@ class AppHomePageState extends State<AppHomePage>
     minLaunches: 5,
     remindDays: 7,
     remindLaunches: 5,
-    googlePlayIdentifier: "co.perish.nautiluswallet",
-    appStoreIdentifier: '1615775960',
+    googlePlayIdentifier: "co.perish.nyautilus",
+    appStoreIdentifier: '1615775960',// TODO: nyautilus
   );
 
   // confetti:
