@@ -1,5 +1,5 @@
 {
-  "@@locale": "zh-Hans",
+  "@@locale": "zh_Hans",
   "account": "账户",
   "@account": {
     "type": "text",
@@ -672,6 +672,11 @@
     "type": "text",
     "description": "change_representative_current_header"
   },
+  "daily": "日常的",
+  "@daily": {
+    "type": "text",
+    "description": "frequency_daily"
+  },
   "dayAgo": "一天前",
   "@dayAgo": {
     "type": "text",
@@ -687,7 +692,7 @@
     "type": "text",
     "description": "Default account name"
   },
-  "defaultGiftMessage": "看看鹦鹉螺！我用这个链接给你发了一些 nano：",
+  "defaultGiftMessage": "看看鹦鹉螺！我用这个链接给你发了一些 %2：",
   "@defaultGiftMessage": {
     "type": "text",
     "description": "default_gift_message"
@@ -1137,6 +1142,10 @@
     "type": "text",
     "description": "funding_header"
   },
+  "generatingWork": "生成 PoW，这可能需要一段时间（> 20 秒）...",
+  "@generatingWork": {
+    "description": "generating_local_work"
+  },
   "getCurrency": "获取 %2",
   "@getCurrency": {
     "type": "text",
@@ -1577,6 +1586,11 @@
     "type": "text",
     "description": "err"
   },
+  "monthly": "每月",
+  "@monthly": {
+    "type": "text",
+    "description": "frequency_monthly"
+  },
   "monthlyServerCosts": "每月服务器成本",
   "@monthlyServerCosts": {
     "type": "text",
@@ -1712,7 +1726,7 @@
     "type": "text",
     "description": "notifications_settings"
   },
-  "notificationTitle": "收到 %1 NANO",
+  "notificationTitle": "收到 %1 %2",
   "@notificationTitle": {
     "type": "text",
     "description": "notification_title"
@@ -2317,7 +2331,12 @@
     "type": "text",
     "description": "Shown to users if they have a rooted Android device or jailbroken iOS device"
   },
-  "scanInstructions": "扫描NANO二维码地址",
+  "save": "节省",
+  "@save": {
+    "type": "text",
+    "description": "dialog_save"
+  },
+  "scanInstructions": "扫描%2二维码地址",
   "@scanInstructions": {
     "type": "text",
     "description": "scan_send_instruction_label"
@@ -2427,7 +2446,7 @@
     "type": "text",
     "description": "home_send_cta"
   },
-  "sendAmountConfirm": "发送 %1 NANO",
+  "sendAmountConfirm": "发送 %1 %2",
   "@sendAmountConfirm": {
     "type": "text",
     "description": "send_amount_confirm"
@@ -2892,7 +2911,7 @@
     "type": "text",
     "description": "transfer_complete_text"
   },
-  "transferConfirmInfo": "检测到一个包含 %1 NANO 的钱包。\n",
+  "transferConfirmInfo": "检测到一个包含 %1 %2 的钱包。\n",
   "@transferConfirmInfo": {
     "type": "text",
     "description": "transfer_confirm_info_first"
@@ -3146,6 +3165,11 @@
   "@weekAgo": {
     "type": "text",
     "description": "history_week_ago"
+  },
+  "weekly": "每周",
+  "@weekly": {
+    "type": "text",
+    "description": "frequency_weekly"
   },
   "welcomeText": "欢迎来到Nautilus。下一步，您可以创建新钱包或导入已有钱包。",
   "@welcomeText": {

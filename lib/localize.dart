@@ -32,25 +32,31 @@ class ZsDelegate extends LocalizationsDelegate<Z> {
 class NonTranslatable {
   /// -- NON-TRANSLATABLE ITEMS
   static String getBlockExplorerUrl(String? hash, AvailableBlockExplorer explorer) {
-    if (explorer.explorer == AvailableBlockExplorerEnum.NANOCOMMUNITY) {
-      return "https://nano.community/$hash";
-    } else if (explorer.explorer == AvailableBlockExplorerEnum.NANOLOOKER) {
-      return "https://nanolooker.com/block/$hash";
-    } else if (explorer.explorer == AvailableBlockExplorerEnum.NANOCAFE) {
-      return "https://nanocafe.cc/$hash";
+    switch (explorer.explorer) {
+      case AvailableBlockExplorerEnum.NANOCOMMUNITY:
+        return "https://nano.community/$hash";
+      case AvailableBlockExplorerEnum.NANOLOOKER:
+        return "https://nanolooker.com/block/$hash";
+      case AvailableBlockExplorerEnum.NANOCAFE:
+        return "https://nanocafe.cc/$hash";
+      case AvailableBlockExplorerEnum.NANOBROWSE:
+      default:
+        return "https://nanobrowse.com/block/$hash";
     }
-    return "https://nanolooker.com/block/$hash";
   }
 
   static String getAccountExplorerUrl(String? account, AvailableBlockExplorer explorer) {
-    if (explorer.explorer == AvailableBlockExplorerEnum.NANOCOMMUNITY) {
-      return "https://nano.community/$account";
-    } else if (explorer.explorer == AvailableBlockExplorerEnum.NANOLOOKER) {
-      return "https://nanolooker.com/account/$account";
-    } else if (explorer.explorer == AvailableBlockExplorerEnum.NANOCAFE) {
-      return "https://nanocafe.cc/$account";
+    switch (explorer.explorer) {
+      case AvailableBlockExplorerEnum.NANOCOMMUNITY:
+        return "https://nano.community/$account";
+      case AvailableBlockExplorerEnum.NANOLOOKER:
+        return "https://nanolooker.com/account/$account";
+      case AvailableBlockExplorerEnum.NANOCAFE:
+        return "https://nanocafe.cc/$account";
+      case AvailableBlockExplorerEnum.NANOBROWSE:
+      default:
+        return "https://nanobrowse.com/account/$account";
     }
-    return "https://nanolooker.com/account/$account";
   }
 
   static String get discordUrl {
@@ -118,7 +124,7 @@ class NonTranslatable {
   }
 
   static String get appName {
-    return "Nautilus";
+    return "Nyautilus";
   }
 
   static String currencyName = "Nano";

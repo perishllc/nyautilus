@@ -672,6 +672,11 @@
     "type": "text",
     "description": "change_representative_current_header"
   },
+  "daily": "Daily",
+  "@daily": {
+    "type": "text",
+    "description": "frequency_daily"
+  },
   "dayAgo": "A day ago",
   "@dayAgo": {
     "type": "text",
@@ -1137,6 +1142,10 @@
     "type": "text",
     "description": "funding_header"
   },
+  "generatingWork": "Generating PoW, this may take a while (> 20 seconds)...",
+  "@generatingWork": {
+    "description": "generating_local_work"
+  },
   "getCurrency": "Get %2",
   "@getCurrency": {
     "type": "text",
@@ -1576,6 +1585,11 @@
   "@mnemonicSizeError2": {
     "type": "text",
     "description": "err"
+  },
+  "monthly": "Monthly",
+  "@monthly": {
+    "type": "text",
+    "description": "frequency_monthly"
   },
   "monthlyServerCosts": "Monthly Server Costs",
   "@monthlyServerCosts": {
@@ -2316,6 +2330,11 @@
   "@rootWarning": {
     "type": "text",
     "description": "Shown to users if they have a rooted Android device or jailbroken iOS device"
+  },
+  "save": "Save",
+  "@save": {
+    "type": "text",
+    "description": "dialog_save"
   },
   "scanInstructions": "Scan a %2 \naddress QR code",
   "@scanInstructions": {
@@ -3146,6 +3165,11 @@
   "@weekAgo": {
     "type": "text",
     "description": "history_week_ago"
+  },
+  "weekly": "Weekly",
+  "@weekly": {
+    "type": "text",
+    "description": "frequency_weekly"
   },
   "welcomeText": "",
   "@welcomeText": {

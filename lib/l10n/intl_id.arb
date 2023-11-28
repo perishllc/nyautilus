@@ -235,7 +235,7 @@
     "type": "text",
     "description": "settings_fingerprint_method"
   },
-  "blockedAdded": "% 1 berhasil diblokir.",
+  "blockedAdded": "%1 berhasil diblokir.",
   "@blockedAdded": {
     "type": "text",
     "description": "blocked_added"
@@ -270,7 +270,7 @@
     "type": "text",
     "description": "blocked_name_missing"
   },
-  "blockedRemoved": "% 1 telah dibuka blokir!",
+  "blockedRemoved": "%1 telah dibuka blokir!",
   "@blockedRemoved": {
     "type": "text",
     "description": "blocked_removed"
@@ -672,6 +672,11 @@
     "type": "text",
     "description": "change_representative_current_header"
   },
+  "daily": "Sehari-hari",
+  "@daily": {
+    "type": "text",
+    "description": "frequency_daily"
+  },
   "dayAgo": "Kemarin",
   "@dayAgo": {
     "type": "text",
@@ -1072,7 +1077,7 @@
     "type": "text",
     "description": "favorite_name_missing"
   },
-  "favoriteRemoved": "% 1 telah dihapus dari favorit!",
+  "favoriteRemoved": "%1 telah dihapus dari favorit!",
   "@favoriteRemoved": {
     "type": "text",
     "description": "favorite_removed"
@@ -1136,6 +1141,10 @@
   "@fundingHeader": {
     "type": "text",
     "description": "funding_header"
+  },
+  "generatingWork": "Menghasilkan PoW, ini mungkin memakan waktu cukup lama (> 20 detik)...",
+  "@generatingWork": {
+    "description": "generating_local_work"
   },
   "getCurrency": "Dapatkan %2",
   "@getCurrency": {
@@ -1577,6 +1586,11 @@
     "type": "text",
     "description": "err"
   },
+  "monthly": "Bulanan",
+  "@monthly": {
+    "type": "text",
+    "description": "frequency_monthly"
+  },
   "monthlyServerCosts": "Biaya Server Bulanan",
   "@monthlyServerCosts": {
     "type": "text",
@@ -1712,7 +1726,7 @@
     "type": "text",
     "description": "notifications_settings"
   },
-  "notificationTitle": "Menerima %1 NANO",
+  "notificationTitle": "Menerima %1 %2",
   "@notificationTitle": {
     "type": "text",
     "description": "notification_title"
@@ -2167,7 +2181,7 @@
     "type": "text",
     "description": "blocked_remove_btn"
   },
-  "removeBlockedConfirmation": "Anda yakin ingin membuka blokir% 1?",
+  "removeBlockedConfirmation": "Anda yakin ingin membuka blokir %1?",
   "@removeBlockedConfirmation": {
     "type": "text",
     "description": "blocked_remove_sure"
@@ -2217,7 +2231,7 @@
     "type": "text",
     "description": "home_request_cta"
   },
-  "requestAmountConfirm": "Permintaan% 1% 2",
+  "requestAmountConfirm": "Permintaan %1 %2",
   "@requestAmountConfirm": {
     "type": "text",
     "description": "request_pin_description"
@@ -2316,6 +2330,11 @@
   "@rootWarning": {
     "type": "text",
     "description": "Shown to users if they have a rooted Android device or jailbroken iOS device"
+  },
+  "save": "Menyimpan",
+  "@save": {
+    "type": "text",
+    "description": "dialog_save"
   },
   "scanInstructions": "Pindai QR code\n alamat Nano",
   "@scanInstructions": {
@@ -2427,7 +2446,7 @@
     "type": "text",
     "description": "home_send_cta"
   },
-  "sendAmountConfirm": "Kirim %1 Nano?",
+  "sendAmountConfirm": "Kirim %1 %2?",
   "@sendAmountConfirm": {
     "type": "text",
     "description": "send_amount_confirm"
@@ -2887,7 +2906,7 @@
     "type": "text",
     "description": "transfer_close_text"
   },
-  "transferComplete": "%1 NANO berhasil ditransfer ke Dompet Nautilus Anda.",
+  "transferComplete": "%1 %2 berhasil ditransfer ke Dompet Nautilus Anda.",
   "@transferComplete": {
     "type": "text",
     "description": "transfer_complete_text"
@@ -3146,6 +3165,11 @@
   "@weekAgo": {
     "type": "text",
     "description": "history_week_ago"
+  },
+  "weekly": "Mingguan",
+  "@weekly": {
+    "type": "text",
+    "description": "frequency_weekly"
   },
   "welcomeText": "Selamat datang di Nautilus. Untuk melanjutkan, anda bisa membuat dompet baru atau mengimpor dompet lama anda.",
   "@welcomeText": {

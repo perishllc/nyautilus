@@ -672,6 +672,11 @@
     "type": "text",
     "description": "change_representative_current_header"
   },
+  "daily": "Ikdienas",
+  "@daily": {
+    "type": "text",
+    "description": "frequency_daily"
+  },
   "dayAgo": "Pirms dienas",
   "@dayAgo": {
     "type": "text",
@@ -1137,6 +1142,10 @@
     "type": "text",
     "description": "funding_header"
   },
+  "generatingWork": "Notiek PoW ģenerēšana, tas var aizņemt kādu laiku (> 20 sekundes)...",
+  "@generatingWork": {
+    "description": "generating_local_work"
+  },
   "getCurrency": "Iegūstiet %2",
   "@getCurrency": {
     "type": "text",
@@ -1576,6 +1585,11 @@
   "@mnemonicSizeError2": {
     "type": "text",
     "description": "err"
+  },
+  "monthly": "Ikmēneša",
+  "@monthly": {
+    "type": "text",
+    "description": "frequency_monthly"
   },
   "monthlyServerCosts": "Ikmēneša servera izmaksas",
   "@monthlyServerCosts": {
@@ -2316,6 +2330,11 @@
   "@rootWarning": {
     "type": "text",
     "description": "Shown to users if they have a rooted Android device or jailbroken iOS device"
+  },
+  "save": "Saglabāt",
+  "@save": {
+    "type": "text",
+    "description": "dialog_save"
   },
   "scanInstructions": "Noskenējiet Nano \nadreses QR kodu",
   "@scanInstructions": {
@@ -3146,6 +3165,11 @@
   "@weekAgo": {
     "type": "text",
     "description": "history_week_ago"
+  },
+  "weekly": "Iknedēļas",
+  "@weekly": {
+    "type": "text",
+    "description": "frequency_weekly"
   },
   "welcomeText": "Sveicināti Nautilus. Izveidojiet jaunu maku vai importējiet eksistējošu",
   "@welcomeText": {

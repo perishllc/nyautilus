@@ -249,6 +249,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Wählen Sie aus, in welcher Einheit Beträge angezeigt werden sollen.\n1 nyano = 0,000001 NANO oder \n1.000.000 Nyano = 1 NANO"),
         "currentlyRepresented":
             MessageLookupByLibrary.simpleMessage("Aktueller Vertreter"),
+        "daily": MessageLookupByLibrary.simpleMessage("Täglich"),
         "dayAgo": MessageLookupByLibrary.simpleMessage("Vor einem Tag"),
         "decryptionError":
             MessageLookupByLibrary.simpleMessage("Entschlüsselungsfehler!"),
@@ -410,6 +411,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fundingBannerHeader":
             MessageLookupByLibrary.simpleMessage("Finanzierungsbanner"),
         "fundingHeader": MessageLookupByLibrary.simpleMessage("Finanzierung"),
+        "generatingWork": MessageLookupByLibrary.simpleMessage(
+            "PoW wird generiert, dies kann eine Weile dauern (> 20 Sekunden) ..."),
         "getCurrency":
             MessageLookupByLibrary.simpleMessage("Holen Sie sich %2"),
         "getNano": MessageLookupByLibrary.simpleMessage("Holen Sie sich Nano"),
@@ -547,7 +550,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Nachricht kopiert"),
         "messageHeader": MessageLookupByLibrary.simpleMessage("Nachricht"),
         "minimumSend": MessageLookupByLibrary.simpleMessage(
-            "Der Mindest-Sendebetrag beträgt %1 NANO"),
+            "Der Mindest-Sendebetrag beträgt %1 %2"),
         "minuteAgo": MessageLookupByLibrary.simpleMessage("Vor einer Minute"),
         "mnemonicInvalidWord":
             MessageLookupByLibrary.simpleMessage("%1 ist kein gültiges Wort"),
@@ -556,6 +559,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Die Geheimsequenz muss 24 Wörter enthalten"),
         "mnemonicSizeError2": MessageLookupByLibrary.simpleMessage(
             "Geheime Phrase darf nur 12 oder 24 Wörter enthalten"),
+        "monthly": MessageLookupByLibrary.simpleMessage("Monatlich"),
         "monthlyServerCosts":
             MessageLookupByLibrary.simpleMessage("Monatliche Serverkosten"),
         "moonpay": MessageLookupByLibrary.simpleMessage("MoonPay"),
@@ -800,6 +804,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Versuchen Sie es erneut"),
         "rootWarning": MessageLookupByLibrary.simpleMessage(
             "Es sieht aus, als seien Änderungen an deinem Gerät vorgenommen worden, welche dessen Sicherheit beeinträchtigen. Es wird empfohlen, das Gerät in seinen Originalzustand zurückzusetzen."),
+        "save": MessageLookupByLibrary.simpleMessage("Speichern"),
         "scanInstructions": MessageLookupByLibrary.simpleMessage(
             "Scanne einen\nNano-Address-QR-Code"),
         "scanNFC": MessageLookupByLibrary.simpleMessage("Über NFC senden"),
@@ -835,7 +840,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Kann nicht von sich selbst anfragen"),
         "send": MessageLookupByLibrary.simpleMessage("Senden"),
         "sendAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("%1 NANO senden?"),
+            MessageLookupByLibrary.simpleMessage("%1 %2 senden?"),
         "sendAmounts": MessageLookupByLibrary.simpleMessage("Beträge senden"),
         "sendError": MessageLookupByLibrary.simpleMessage(
             "Ein Fehler ist aufgetreten. Versuche es später erneut."),
@@ -1067,6 +1072,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "watchOnlySendDisabled": MessageLookupByLibrary.simpleMessage(
             "Versendungen sind an Nur-Überwachungs-Adressen deaktiviert"),
         "weekAgo": MessageLookupByLibrary.simpleMessage("Vor einer Woche"),
+        "weekly": MessageLookupByLibrary.simpleMessage("Wöchentlich"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
             "Willkommen bei Nautilus. Um fortzufahren, benötigst du ein Wallet. Erstelle bitte ein neues Wallet oder importiere ein bereits existierendes Wallet."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(

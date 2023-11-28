@@ -672,6 +672,11 @@
     "type": "text",
     "description": "change_representative_current_header"
   },
+  "daily": "Günlük",
+  "@daily": {
+    "type": "text",
+    "description": "frequency_daily"
+  },
   "dayAgo": "Bir gün önce",
   "@dayAgo": {
     "type": "text",
@@ -1137,6 +1142,10 @@
     "type": "text",
     "description": "funding_header"
   },
+  "generatingWork": "PoW oluşturuluyor, bu biraz zaman alabilir (> 20 saniye)...",
+  "@generatingWork": {
+    "description": "generating_local_work"
+  },
   "getCurrency": "%2'yi al",
   "@getCurrency": {
     "type": "text",
@@ -1577,6 +1586,11 @@
     "type": "text",
     "description": "err"
   },
+  "monthly": "Aylık",
+  "@monthly": {
+    "type": "text",
+    "description": "frequency_monthly"
+  },
   "monthlyServerCosts": "Aylık Sunucu Maliyetleri",
   "@monthlyServerCosts": {
     "type": "text",
@@ -1712,7 +1726,7 @@
     "type": "text",
     "description": "notifications_settings"
   },
-  "notificationTitle": "%1 NANO Alındı",
+  "notificationTitle": "%1 %2 Alındı",
   "@notificationTitle": {
     "type": "text",
     "description": "notification_title"
@@ -2217,7 +2231,7 @@
     "type": "text",
     "description": "home_request_cta"
   },
-  "requestAmountConfirm": "İstek %1% 2",
+  "requestAmountConfirm": "İstek %1 %2",
   "@requestAmountConfirm": {
     "type": "text",
     "description": "request_pin_description"
@@ -2316,6 +2330,11 @@
   "@rootWarning": {
     "type": "text",
     "description": "Shown to users if they have a rooted Android device or jailbroken iOS device"
+  },
+  "save": "Kaydetmek",
+  "@save": {
+    "type": "text",
+    "description": "dialog_save"
   },
   "scanInstructions": "Nano Adresi'nin \n QR Kodu'nu tarayın",
   "@scanInstructions": {
@@ -2427,7 +2446,7 @@
     "type": "text",
     "description": "home_send_cta"
   },
-  "sendAmountConfirm": "%1 Nano gönder?",
+  "sendAmountConfirm": "%1 %2 gönder?",
   "@sendAmountConfirm": {
     "type": "text",
     "description": "send_amount_confirm"
@@ -2892,7 +2911,7 @@
     "type": "text",
     "description": "transfer_complete_text"
   },
-  "transferConfirmInfo": "%1 NANO bakiyeye sahip bir cüzdan tespit edildi.\n",
+  "transferConfirmInfo": "%1 %2 bakiyeye sahip bir cüzdan tespit edildi.\n",
   "@transferConfirmInfo": {
     "type": "text",
     "description": "transfer_confirm_info_first"
@@ -3146,6 +3165,11 @@
   "@weekAgo": {
     "type": "text",
     "description": "history_week_ago"
+  },
+  "weekly": "Haftalık",
+  "@weekly": {
+    "type": "text",
+    "description": "frequency_weekly"
   },
   "welcomeText": "Nautilus'a hoşgeldiniz. Devam etmek için yeni bir cüzdan oluşturabilir veya var olanı içe aktarabilirsiniz.",
   "@welcomeText": {

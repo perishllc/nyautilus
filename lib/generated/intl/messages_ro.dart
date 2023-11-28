@@ -103,8 +103,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Ce explorator de blocuri să utilizați pentru a afișa informațiile despre tranzacții"),
         "blockUser":
             MessageLookupByLibrary.simpleMessage("Blocați acest utilizator"),
-        "blockedAdded": MessageLookupByLibrary.simpleMessage(
-            "% 1 a fost blocat cu succes."),
+        "blockedAdded":
+            MessageLookupByLibrary.simpleMessage("%1 a fost blocat cu succes."),
         "blockedExists": MessageLookupByLibrary.simpleMessage(
             "Utilizatorul este deja blocat!"),
         "blockedHeader": MessageLookupByLibrary.simpleMessage("Blocată"),
@@ -117,7 +117,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "blockedNameMissing":
             MessageLookupByLibrary.simpleMessage("Alegeți un nume Nick"),
         "blockedRemoved":
-            MessageLookupByLibrary.simpleMessage("% 1 a fost deblocat!"),
+            MessageLookupByLibrary.simpleMessage("%1 a fost deblocat!"),
         "branchConnectErrorLongDesc": MessageLookupByLibrary.simpleMessage(
             "Se pare că nu putem ajunge la API-ul Branch, acest lucru este de obicei cauzat de un fel de problemă de rețea sau de blocarea conexiunii prin VPN.\n\n Ar trebui să puteți folosi aplicația ca de obicei, dar este posibil ca trimiterea și primirea cardurilor cadou să nu funcționeze."),
         "branchConnectErrorShortDesc": MessageLookupByLibrary.simpleMessage(
@@ -242,13 +242,14 @@ class MessageLookup extends MessageLookupByLibrary {
             "Alegeți în ce unitate să afișați sumele.\n1 nyano = 0.000001 NANO, sau \n1.000,000 nyano = 1 NANO"),
         "currentlyRepresented":
             MessageLookupByLibrary.simpleMessage("Reprezentantul curent:"),
+        "daily": MessageLookupByLibrary.simpleMessage("Zilnic"),
         "dayAgo": MessageLookupByLibrary.simpleMessage("Acum o zi"),
         "decryptionError":
             MessageLookupByLibrary.simpleMessage("Eroare de decriptare!"),
         "defaultAccountName":
             MessageLookupByLibrary.simpleMessage("Cont principal"),
         "defaultGiftMessage": MessageLookupByLibrary.simpleMessage(
-            "Vezi Nautilus! Ți-am trimis niște nano cu acest link:"),
+            "Vezi Nautilus! Ți-am trimis niște %2 cu acest link:"),
         "defaultNewAccountName":
             MessageLookupByLibrary.simpleMessage("Contul nr. %1"),
         "delete": MessageLookupByLibrary.simpleMessage("Șterge"),
@@ -383,7 +384,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "favoriteNameMissing": MessageLookupByLibrary.simpleMessage(
             "Alegeți un nume pentru acest favorit"),
         "favoriteRemoved": MessageLookupByLibrary.simpleMessage(
-            "% 1 a fost eliminat din favorite!"),
+            "%1 a fost eliminat din favorite!"),
         "favoritesHeader": MessageLookupByLibrary.simpleMessage("Favorite"),
         "featured": MessageLookupByLibrary.simpleMessage("Recomandate"),
         "fewDaysAgo":
@@ -402,6 +403,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fundingBannerHeader":
             MessageLookupByLibrary.simpleMessage("Banner de finanțare"),
         "fundingHeader": MessageLookupByLibrary.simpleMessage("Finanțarea"),
+        "generatingWork": MessageLookupByLibrary.simpleMessage(
+            "Se generează PoW, aceasta poate dura ceva timp (> 20 de secunde)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("Obțineți %2"),
         "getNano": MessageLookupByLibrary.simpleMessage("Ia NANO"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("Ai un cadou!"),
@@ -533,7 +536,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "messageCopied": MessageLookupByLibrary.simpleMessage("Mesaj copiat"),
         "messageHeader": MessageLookupByLibrary.simpleMessage("Mesaj"),
         "minimumSend": MessageLookupByLibrary.simpleMessage(
-            "Suma minimă de trimitere este% 1% 2"),
+            "Suma minimă de trimitere este %1 %2"),
         "minuteAgo": MessageLookupByLibrary.simpleMessage("Un minut în urmă"),
         "mnemonicInvalidWord":
             MessageLookupByLibrary.simpleMessage("%1 nu este un cuvânt valid"),
@@ -543,6 +546,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Formula secretă conține doar 24 de cuvinte"),
         "mnemonicSizeError2": MessageLookupByLibrary.simpleMessage(
             "Fraza secretă poate conține doar 12 sau 24 de cuvinte"),
+        "monthly": MessageLookupByLibrary.simpleMessage("Lunar"),
         "monthlyServerCosts": MessageLookupByLibrary.simpleMessage(
             "Costuri lunare ale serverului"),
         "moonpay": MessageLookupByLibrary.simpleMessage("MoonPay"),
@@ -730,7 +734,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Sigur doriți să ascundeți acest cont? Îl puteți reafișa mai târziu apăsând butonul \"%1\""),
         "removeBlocked": MessageLookupByLibrary.simpleMessage("Deblocați"),
         "removeBlockedConfirmation": MessageLookupByLibrary.simpleMessage(
-            "Sigur doriți să deblocați deblocarea% 1?"),
+            "Sigur doriți să deblocați deblocarea %1?"),
         "removeContact":
             MessageLookupByLibrary.simpleMessage("Șterge contactul"),
         "removeContactConfirmation": MessageLookupByLibrary.simpleMessage(
@@ -748,7 +752,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Reprezentanți"),
         "request": MessageLookupByLibrary.simpleMessage("Cerere"),
         "requestAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("Cerere% 1% 2"),
+            MessageLookupByLibrary.simpleMessage("Cerere %1 %2"),
         "requestError": MessageLookupByLibrary.simpleMessage(
             "Solicitare eșuată: Acest utilizator nu pare să aibă instalat Nautilus sau notificările sunt dezactivate."),
         "requestFrom": MessageLookupByLibrary.simpleMessage("O cerere de la"),
@@ -783,6 +787,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "retry": MessageLookupByLibrary.simpleMessage("Reîncercați"),
         "rootWarning": MessageLookupByLibrary.simpleMessage(
             "Se pare că acest dispozitiv este \"rootat\" / \"jailbroken\" sau modificat astfel încât securitatea este pusă în pericol. Recomandăm să resetați dispozitivul la starea originală înainte de a continua."),
+        "save": MessageLookupByLibrary.simpleMessage("Salvați"),
         "scanInstructions": MessageLookupByLibrary.simpleMessage(
             "Scanează o adresă NANO de tip cod QR"),
         "scanNFC": MessageLookupByLibrary.simpleMessage("Trimite prin NFC"),
@@ -818,7 +823,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Nu se poate solicita de la sine"),
         "send": MessageLookupByLibrary.simpleMessage("Trimite"),
         "sendAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("Trimite %1 NANO"),
+            MessageLookupByLibrary.simpleMessage("Trimite %1 %2"),
         "sendAmounts": MessageLookupByLibrary.simpleMessage("Trimiteți sume"),
         "sendError": MessageLookupByLibrary.simpleMessage(
             "A apărut o eroare. Încercați din nou mai târziu."),
@@ -1048,6 +1053,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "watchOnlySendDisabled": MessageLookupByLibrary.simpleMessage(
             "Trimiterile sunt dezactivate numai pe adresele de ceas"),
         "weekAgo": MessageLookupByLibrary.simpleMessage("Acum o saptamana"),
+        "weekly": MessageLookupByLibrary.simpleMessage("Săptămânal"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
             "Bine ai venit! Pentru a continua, creează un portofel nou sau importă unul deja existent."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(

@@ -246,6 +246,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Scegliere in quale unità visualizzare gli importi.\n1 nyano = 0,000001 NANO, oppure \n1.000.000 nyano = 1 NANO"),
         "currentlyRepresented": MessageLookupByLibrary.simpleMessage(
             "Attualmente Rappresentato Da"),
+        "daily": MessageLookupByLibrary.simpleMessage("Quotidiano"),
         "dayAgo": MessageLookupByLibrary.simpleMessage("Un giorno fa"),
         "decryptionError":
             MessageLookupByLibrary.simpleMessage("Errore di decrittazione!"),
@@ -406,6 +407,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fundingBannerHeader":
             MessageLookupByLibrary.simpleMessage("Banner di finanziamento"),
         "fundingHeader": MessageLookupByLibrary.simpleMessage("Finanziamento"),
+        "generatingWork": MessageLookupByLibrary.simpleMessage(
+            "Generazione PoW, l\'operazione potrebbe richiedere del tempo (> 20 secondi)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("Ottieni %2"),
         "getNano": MessageLookupByLibrary.simpleMessage("Ottieni NANO"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("Hai un regalo!"),
@@ -546,6 +549,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "La frase segreta può contenere solo 24 parole"),
         "mnemonicSizeError2": MessageLookupByLibrary.simpleMessage(
             "La frase segreta può contenere solo 12 o 24 parole"),
+        "monthly": MessageLookupByLibrary.simpleMessage("Mensile"),
         "monthlyServerCosts":
             MessageLookupByLibrary.simpleMessage("Costi mensili del server"),
         "moonpay": MessageLookupByLibrary.simpleMessage("MoonPay"),
@@ -785,6 +789,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "retry": MessageLookupByLibrary.simpleMessage("Riprova"),
         "rootWarning": MessageLookupByLibrary.simpleMessage(
             "Sembra che il tuo dispositivo sia “rooted”, “jailbroken”, o abbia una modifica che ne compromette la sicurezza. Prima di procedere, è consigliato eseguire un ripristino del dispositivo al suo stato originale."),
+        "save": MessageLookupByLibrary.simpleMessage("Salva"),
         "scanInstructions": MessageLookupByLibrary.simpleMessage(
             "Scansiona un \ncodice QR Nano"),
         "scanNFC": MessageLookupByLibrary.simpleMessage("Invia tramite NFC"),
@@ -820,7 +825,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Impossibile richiedere da sé"),
         "send": MessageLookupByLibrary.simpleMessage("Invia"),
         "sendAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("Inviare %1 Nano?"),
+            MessageLookupByLibrary.simpleMessage("Inviare %1 %2?"),
         "sendAmounts": MessageLookupByLibrary.simpleMessage("Invia importi"),
         "sendError": MessageLookupByLibrary.simpleMessage(
             "Si è verificato un errore. Riprova più tardi."),
@@ -961,7 +966,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferClose": MessageLookupByLibrary.simpleMessage(
             "Premi dove vuoi per chiudere la finestra."),
         "transferComplete": MessageLookupByLibrary.simpleMessage(
-            "%1 NANO trasferiti con successo sul tuo portafoglio Nautilus."),
+            "%1 %2 trasferiti con successo sul tuo portafoglio Nautilus."),
         "transferConfirmInfo": MessageLookupByLibrary.simpleMessage(
             "Rilevato un portafoglio con un saldo di %1 NANO.\n"),
         "transferConfirmInfoSecond": MessageLookupByLibrary.simpleMessage(
@@ -1049,6 +1054,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "watchOnlySendDisabled": MessageLookupByLibrary.simpleMessage(
             "Gli invii sono disabilitati sugli indirizzi di sola visualizzazione"),
         "weekAgo": MessageLookupByLibrary.simpleMessage("Una settimana fa"),
+        "weekly": MessageLookupByLibrary.simpleMessage("settimanalmente"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
             "Benvenuto in Nautilus. Per continuare, puoi creare un nuovo portafoglio o importarne uno esistente."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(

@@ -89,7 +89,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("거래 정보를 표시하는 데 사용할 블록 탐색기"),
         "blockUser": MessageLookupByLibrary.simpleMessage("이 사용자 차단"),
         "blockedAdded":
-            MessageLookupByLibrary.simpleMessage("% 1이 성공적으로 차단되었습니다."),
+            MessageLookupByLibrary.simpleMessage("%1이 성공적으로 차단되었습니다."),
         "blockedExists":
             MessageLookupByLibrary.simpleMessage("사용자가 이미 차단되었습니다!"),
         "blockedHeader": MessageLookupByLibrary.simpleMessage("차단됨"),
@@ -100,7 +100,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("닉 이름이 이미 사용되었습니다!"),
         "blockedNameMissing": MessageLookupByLibrary.simpleMessage("닉네임 선택"),
         "blockedRemoved":
-            MessageLookupByLibrary.simpleMessage("% 1이 (가) 차단 해제되었습니다"),
+            MessageLookupByLibrary.simpleMessage("%1이 (가) 차단 해제되었습니다"),
         "branchConnectErrorLongDesc": MessageLookupByLibrary.simpleMessage(
             "Branch API에 연결할 수 없는 것 같습니다. 이는 일반적으로 일종의 네트워크 문제 또는 VPN이 연결을 차단하기 때문입니다.\n\n 앱을 정상적으로 사용할 수는 있지만 기프트 카드를 보내고 받는 것은 작동하지 않을 수 있습니다."),
         "branchConnectErrorShortDesc":
@@ -207,6 +207,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "currencyModeInfo": MessageLookupByLibrary.simpleMessage(
             "금액을 표시할 단위를 선택합니다.\n1 냐노 = 0.000001 나노 또는 \n1,000,000 냐노 = 1 나노"),
         "currentlyRepresented": MessageLookupByLibrary.simpleMessage("현재 대리인"),
+        "daily": MessageLookupByLibrary.simpleMessage("일일"),
         "dayAgo": MessageLookupByLibrary.simpleMessage("하루 전"),
         "decryptionError": MessageLookupByLibrary.simpleMessage("암호 해독 오류!"),
         "defaultAccountName":
@@ -322,7 +323,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "favoriteNameMissing":
             MessageLookupByLibrary.simpleMessage("이 즐겨찾기의 이름 선택"),
         "favoriteRemoved":
-            MessageLookupByLibrary.simpleMessage("% 1이 (가) 즐겨찾기에서 제거되었습니다!"),
+            MessageLookupByLibrary.simpleMessage("%1이 (가) 즐겨찾기에서 제거되었습니다!"),
         "favoritesHeader": MessageLookupByLibrary.simpleMessage("즐겨찾기"),
         "featured": MessageLookupByLibrary.simpleMessage("추천 상품"),
         "fewDaysAgo": MessageLookupByLibrary.simpleMessage("며칠 전"),
@@ -336,6 +337,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fulfilled": MessageLookupByLibrary.simpleMessage("성취됩니다"),
         "fundingBannerHeader": MessageLookupByLibrary.simpleMessage("펀딩 배너"),
         "fundingHeader": MessageLookupByLibrary.simpleMessage("자금 조달"),
+        "generatingWork": MessageLookupByLibrary.simpleMessage(
+            "PoW를 생성하는 데 시간이 좀 걸릴 수 있습니다(> 20초)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("%2 가져오기"),
         "getNano": MessageLookupByLibrary.simpleMessage("나노를 얻으십시오"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("선물이 있어요!"),
@@ -454,7 +457,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "messageCopied": MessageLookupByLibrary.simpleMessage("메시지 복사됨"),
         "messageHeader": MessageLookupByLibrary.simpleMessage("메시지"),
         "minimumSend":
-            MessageLookupByLibrary.simpleMessage("최소 전송 금액은 %1% 2입니다."),
+            MessageLookupByLibrary.simpleMessage("최소 전송 금액은 %1 %2 입니다."),
         "minuteAgo": MessageLookupByLibrary.simpleMessage("1분 전"),
         "mnemonicInvalidWord":
             MessageLookupByLibrary.simpleMessage("%1 is not a valid word"),
@@ -464,6 +467,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Secret phrase may only contain 24 words"),
         "mnemonicSizeError2": MessageLookupByLibrary.simpleMessage(
             "비밀 문구는 12단어 또는 24단어만 포함할 수 있습니다."),
+        "monthly": MessageLookupByLibrary.simpleMessage("월간 간행물"),
         "monthlyServerCosts": MessageLookupByLibrary.simpleMessage("월간 서버 비용"),
         "moonpay": MessageLookupByLibrary.simpleMessage("MoonPay"),
         "moreSettings": MessageLookupByLibrary.simpleMessage("자세한 설정"),
@@ -501,7 +505,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "notificationInfo": MessageLookupByLibrary.simpleMessage(
             "이 기능이 제대로 작동하려면 알림을 활성화해야 합니다."),
         "notificationTitle":
-            MessageLookupByLibrary.simpleMessage("% s개의 NANO을 받았습니다"),
+            MessageLookupByLibrary.simpleMessage("%1 개의 %2 을 받았습니다"),
         "notificationWarning": MessageLookupByLibrary.simpleMessage("알림 비활성화됨"),
         "notificationWarningBodyLong": MessageLookupByLibrary.simpleMessage(
             "지불 요청, 메모 및 메시지는 모두 FCM 알림 서비스를 사용하여 메시지 전달을 보장하므로 제대로 작동하려면 알림을 활성화해야 합니다.\n\n아래 버튼으로 알림을 활성화하거나 이러한 기능을 사용하지 않으려면 이 카드를 닫을 수 있습니다."),
@@ -629,7 +633,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Are you sure you want to hide this account? You can re-add it later by tapping the \"%1\" button."),
         "removeBlocked": MessageLookupByLibrary.simpleMessage("차단 해제"),
         "removeBlockedConfirmation":
-            MessageLookupByLibrary.simpleMessage("% 1을 (를) 차단 해제하시겠습니까?"),
+            MessageLookupByLibrary.simpleMessage("%1을 (를) 차단 해제하시겠습니까?"),
         "removeContact": MessageLookupByLibrary.simpleMessage("연락처 삭제"),
         "removeContactConfirmation":
             MessageLookupByLibrary.simpleMessage("% s을 (를) 삭제 하시겠습니까?"),
@@ -644,7 +648,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Representatives"),
         "request": MessageLookupByLibrary.simpleMessage("요청"),
         "requestAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("요청% 1 %2"),
+            MessageLookupByLibrary.simpleMessage("요청 %1 %2"),
         "requestError": MessageLookupByLibrary.simpleMessage(
             "요청 실패: 이 사용자는 Nautilus가 설치되어 있지 않거나 알림이 비활성화된 것으로 보입니다."),
         "requestFrom": MessageLookupByLibrary.simpleMessage("요청처"),
@@ -674,6 +678,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "retry": MessageLookupByLibrary.simpleMessage("재시도"),
         "rootWarning": MessageLookupByLibrary.simpleMessage(
             "It appears your device is \"rooted\", \"jailbroken\", or modified in a way that compromises security. It is recommended that you reset your device to its original state before proceeding."),
+        "save": MessageLookupByLibrary.simpleMessage("구하다"),
         "scanInstructions":
             MessageLookupByLibrary.simpleMessage("Nano QR 코드 주소를 스캔하하세요"),
         "scanNFC": MessageLookupByLibrary.simpleMessage("NFC를 통해 보내기"),
@@ -707,7 +712,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("본인으로부터 요청할 수 없음"),
         "send": MessageLookupByLibrary.simpleMessage("보내기"),
         "sendAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("%1 Nano를 발송하시겠습니까?"),
+            MessageLookupByLibrary.simpleMessage("%1 %2 를 발송하시겠습니까?"),
         "sendAmounts": MessageLookupByLibrary.simpleMessage("송금액"),
         "sendError":
             MessageLookupByLibrary.simpleMessage("문제가 발생했습니다. 나중에 다시 시도하시오."),
@@ -828,7 +833,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferComplete": MessageLookupByLibrary.simpleMessage(
             "%1 %2 successfully transferred to your Nautilus Wallet.\n"),
         "transferConfirmInfo": MessageLookupByLibrary.simpleMessage(
-            "A wallet with a balance of %1 NANO has been detected.\n"),
+            "A wallet with a balance of %1 %2 has been detected.\n"),
         "transferConfirmInfoSecond": MessageLookupByLibrary.simpleMessage(
             "Tap confirm to transfer the funds.\n"),
         "transferConfirmInfoThird": MessageLookupByLibrary.simpleMessage(
@@ -904,6 +909,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "watchOnlySendDisabled":
             MessageLookupByLibrary.simpleMessage("보기 전용 주소에서는 보내기가 비활성화됩니다."),
         "weekAgo": MessageLookupByLibrary.simpleMessage("일주일 전"),
+        "weekly": MessageLookupByLibrary.simpleMessage("주간"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
             "Nautilus에 오신 것을 환영합니다. 계속하려면, 새 지갑을 만들거나 기존 지갑을 불러오세요."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(

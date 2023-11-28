@@ -1405,6 +1405,16 @@ class Z {
     );
   }
 
+  /// `Daily`
+  String get daily {
+    return Intl.message(
+      'Daily',
+      name: 'daily',
+      desc: 'frequency_daily',
+      args: [],
+    );
+  }
+
   /// `A day ago`
   String get dayAgo {
     return Intl.message(
@@ -2336,6 +2346,16 @@ class Z {
     );
   }
 
+  /// `Generating PoW, this may take a while (> 20 seconds)...`
+  String get generatingWork {
+    return Intl.message(
+      'Generating PoW, this may take a while (> 20 seconds)...',
+      name: 'generatingWork',
+      desc: 'generating_local_work',
+      args: [],
+    );
+  }
+
   /// `Get %2`
   String get getCurrency {
     return Intl.message(
@@ -3214,6 +3234,16 @@ class Z {
       'Secret phrase may only contain 12 or 24 words',
       name: 'mnemonicSizeError2',
       desc: 'err',
+      args: [],
+    );
+  }
+
+  /// `Monthly`
+  String get monthly {
+    return Intl.message(
+      'Monthly',
+      name: 'monthly',
+      desc: 'frequency_monthly',
       args: [],
     );
   }
@@ -4700,6 +4730,16 @@ class Z {
       name: 'rootWarning',
       desc:
           'Shown to users if they have a rooted Android device or jailbroken iOS device',
+      args: [],
+    );
+  }
+
+  /// `Save`
+  String get save {
+    return Intl.message(
+      'Save',
+      name: 'save',
+      desc: 'dialog_save',
       args: [],
     );
   }
@@ -6361,6 +6401,16 @@ class Z {
       'A week ago',
       name: 'weekAgo',
       desc: 'history_week_ago',
+      args: [],
+    );
+  }
+
+  /// `Weekly`
+  String get weekly {
+    return Intl.message(
+      'Weekly',
+      name: 'weekly',
+      desc: 'frequency_weekly',
       args: [],
     );
   }

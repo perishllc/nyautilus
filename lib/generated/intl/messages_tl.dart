@@ -248,6 +248,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Piliin kung aling yunit ang magpapakita ng mga halaga.\n1 nyano = 0.000001 NANO, o \n1,000,000 nyano = 1 NANO"),
         "currentlyRepresented": MessageLookupByLibrary.simpleMessage(
             "Kasalukuyang nirerepresenta ng"),
+        "daily": MessageLookupByLibrary.simpleMessage("Araw-araw"),
         "dayAgo": MessageLookupByLibrary.simpleMessage("Kahapon"),
         "decryptionError":
             MessageLookupByLibrary.simpleMessage("Error sa pag-decryption!"),
@@ -409,6 +410,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fundingBannerHeader":
             MessageLookupByLibrary.simpleMessage("Banner ng Pagpopondo"),
         "fundingHeader": MessageLookupByLibrary.simpleMessage("Pagpopondo"),
+        "generatingWork": MessageLookupByLibrary.simpleMessage(
+            "Pagbuo ng PoW, maaaring tumagal ito ng ilang sandali (> 20 segundo)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("Kumuha ng %2"),
         "getNano": MessageLookupByLibrary.simpleMessage("Kumuha ng NANO"),
         "giftAlert":
@@ -556,6 +559,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Secret phrase ay may 24 na salita lamang"),
         "mnemonicSizeError2": MessageLookupByLibrary.simpleMessage(
             "Ang lihim na parirala ay maaari lamang maglaman ng 12 o 24 na salita"),
+        "monthly": MessageLookupByLibrary.simpleMessage("Buwan-buwan"),
         "monthlyServerCosts": MessageLookupByLibrary.simpleMessage(
             "Buwanang Mga Gastos sa Server"),
         "moonpay": MessageLookupByLibrary.simpleMessage("MoonPay"),
@@ -601,7 +605,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "notificationInfo": MessageLookupByLibrary.simpleMessage(
             "Upang maayos ang tampok na ito, dapat na pinagana ang mga notification"),
         "notificationTitle":
-            MessageLookupByLibrary.simpleMessage("Nakatanggap ng %1 NANO"),
+            MessageLookupByLibrary.simpleMessage("Nakatanggap ng %1 %2"),
         "notificationWarning": MessageLookupByLibrary.simpleMessage(
             "Hindi Pinagana ang Mga Notification"),
         "notificationWarningBodyLong": MessageLookupByLibrary.simpleMessage(
@@ -801,6 +805,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "retry": MessageLookupByLibrary.simpleMessage("Subukan muli"),
         "rootWarning": MessageLookupByLibrary.simpleMessage(
             "Ang iyong device ay \"rooted\", \"jailbroken\", o nabago ang security settings. Mabuti na i-reset mo ang iyong device sa orihinal na estado bago magpatuloy."),
+        "save": MessageLookupByLibrary.simpleMessage("I-save"),
         "scanInstructions": MessageLookupByLibrary.simpleMessage(
             "I-scan ang Nano \naddress QR code"),
         "scanNFC": MessageLookupByLibrary.simpleMessage(
@@ -841,7 +846,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Hindi maaaring hilingin mula sa sarili"),
         "send": MessageLookupByLibrary.simpleMessage("Magpadala"),
         "sendAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("Magpadala ng %1 Nano?"),
+            MessageLookupByLibrary.simpleMessage("Magpadala ng %1 %2?"),
         "sendAmounts":
             MessageLookupByLibrary.simpleMessage("Magpadala ng Mga Halaga"),
         "sendError": MessageLookupByLibrary.simpleMessage(
@@ -990,9 +995,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferClose": MessageLookupByLibrary.simpleMessage(
             "I-tap kahit saan para isara itong window."),
         "transferComplete": MessageLookupByLibrary.simpleMessage(
-            "%1 NANO ay nalipat na sa iyong Nautilus Wallet."),
+            "%1 %2 ay nalipat na sa iyong Nautilus Wallet."),
         "transferConfirmInfo": MessageLookupByLibrary.simpleMessage(
-            "Ang wallet na may balanse na %1 NANO ay na-detect.\n"),
+            "Ang wallet na may balanse na %1 %2 ay na-detect.\n"),
         "transferConfirmInfoSecond": MessageLookupByLibrary.simpleMessage(
             "I-tap ang confirm para ilipat ang pondo.\n"),
         "transferConfirmInfoThird": MessageLookupByLibrary.simpleMessage(
@@ -1079,6 +1084,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Naka-disable ang mga pagpapadala sa mga address na relo lang"),
         "weekAgo": MessageLookupByLibrary.simpleMessage(
             "Isang linggo na ang nakalipas"),
+        "weekly": MessageLookupByLibrary.simpleMessage("Linggu-linggo"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
             "Maligayang pagdating sa Nautilus. Para magpatuloy, gumawa ng bagong wallet o gamitin ang dating wallet."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(

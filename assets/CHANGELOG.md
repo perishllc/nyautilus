@@ -1,13 +1,54 @@
-## v0.8.6 - [2023-05-XX]
+## v0.9.2 - [2023-11-XX]
+#### Added
+#### Changed
+#### Fixed
+## v0.9.1 - [2023-11-18]
+#### Added
+- Work generation
+#### Changed
+- This resets the list of work generation sources
+#### Fixed
+- Minor fixes
+## v0.9.0 - [2023-11-10]
+#### Changed
+- Updated default pow node source
+- Re-work on magic-link login
+## v0.8.9 - [2023-10-07]
+#### Added
+- New block explorer option: nanobrowse.com
+#### Changed
+- Default block explorer changed to nanobrowse.com
+- Removed Split Gift Card option
+#### Fixed
+- Bugs with Brazillian Real and QR code scanning
+- Lots of translation fixes
+## v0.8.8 - [2023-08-09]
+#### Changed
+- Slight update to card time format
+#### Fixed
+- Unopened dialog background color
+## v0.8.7 - [2023-06-02]
+#### Added
+- Username support on the "upcoming" sheet
+- Labels for scheduled payments
+#### Fixed
+- Bug where app would ask to check usernames on nano addresses
+## v0.8.6 - [2023-06-01]
 #### Added
 - Scheduled Payments
+- Payment History
 - Support for .well-known DID's
 - Confirmation popup when looking up a username
 - Account switcher on the send/receive sheets
 - Revamped username support
 - Solar PoW option
 - rpc.nano.to PoW option
+- nanoriver PoW option
+- Account switcher on the home screen (tap and hold to copy address)
+- Ability to edit PoW and Node entries
 #### Changed
+- Time format on transaction cards
+- Send / Request confirm sheet updates
 - Dialog style updates
 - Move block explorer setting to advanced settings
 - Remove funding banner
@@ -18,6 +59,8 @@
 #### Fixed
 - Bug with receives not updating the home page properly
 - Username checking is now properly debounced
+- Bug with scanning paper wallets
+- Bug with rendering slider actions on some devices
 ## v0.8.5 - [2023-04-16]
 #### Added
 - Ability to import 12 word mnemonics / trust wallet phrases

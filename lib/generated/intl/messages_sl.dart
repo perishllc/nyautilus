@@ -105,7 +105,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "blockUser":
             MessageLookupByLibrary.simpleMessage("Blokiraj tega uporabnika"),
         "blockedAdded":
-            MessageLookupByLibrary.simpleMessage("% 1 uspešno blokiran."),
+            MessageLookupByLibrary.simpleMessage("%1 uspešno blokiran."),
         "blockedExists":
             MessageLookupByLibrary.simpleMessage("Uporabnik je že blokiran!"),
         "blockedHeader": MessageLookupByLibrary.simpleMessage("Blokiran"),
@@ -118,7 +118,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "blockedNameMissing":
             MessageLookupByLibrary.simpleMessage("Izberite Nick Nick Name"),
         "blockedRemoved":
-            MessageLookupByLibrary.simpleMessage("% 1 je bil odblokiran!"),
+            MessageLookupByLibrary.simpleMessage("%1 je bil odblokiran!"),
         "branchConnectErrorLongDesc": MessageLookupByLibrary.simpleMessage(
             "Zdi se, da ne moremo doseči vmesnika Branch API, običajno je to posledica neke vrste težave z omrežjem ali VPN, ki blokira povezavo.\n\n Aplikacijo bi morali še vedno uporabljati kot običajno, vendar pošiljanje in prejemanje darilnih kartic morda ne bo delovalo."),
         "branchConnectErrorShortDesc":
@@ -245,6 +245,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Izberite, v kateri enoti želite prikazati zneske.\n1 nyano = 0,000001 NANO, ali \n1.000.000 nyano = 1 NANO"),
         "currentlyRepresented":
             MessageLookupByLibrary.simpleMessage("Trenutni predstavnik"),
+        "daily": MessageLookupByLibrary.simpleMessage("Dnevno"),
         "dayAgo": MessageLookupByLibrary.simpleMessage("Pred enim dnevom"),
         "decryptionError":
             MessageLookupByLibrary.simpleMessage("Napaka dešifriranja!"),
@@ -381,7 +382,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "favoriteNameMissing": MessageLookupByLibrary.simpleMessage(
             "Izberite ime za to najljubšo"),
         "favoriteRemoved": MessageLookupByLibrary.simpleMessage(
-            "% 1 je bil odstranjen iz priljubljenih!"),
+            "%1 je bil odstranjen iz priljubljenih!"),
         "favoritesHeader": MessageLookupByLibrary.simpleMessage("Priljubljene"),
         "featured": MessageLookupByLibrary.simpleMessage("Predstavljen"),
         "fewDaysAgo": MessageLookupByLibrary.simpleMessage("Pred nekaj dnevi"),
@@ -399,6 +400,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fundingBannerHeader":
             MessageLookupByLibrary.simpleMessage("Banner za financiranje"),
         "fundingHeader": MessageLookupByLibrary.simpleMessage("financiranje"),
+        "generatingWork": MessageLookupByLibrary.simpleMessage(
+            "Ustvarjanje PoW, to lahko traja nekaj časa (> 20 sekund) ..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("Pridobite %2"),
         "getNano": MessageLookupByLibrary.simpleMessage("Pridobite NANO"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("Imate darilo!"),
@@ -530,7 +533,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Sporočilo kopirano"),
         "messageHeader": MessageLookupByLibrary.simpleMessage("Sporočilo"),
         "minimumSend": MessageLookupByLibrary.simpleMessage(
-            "Minimalni znesek za pošiljanje je% 1% 2"),
+            "Minimalni znesek za pošiljanje je %1 %2"),
         "minuteAgo": MessageLookupByLibrary.simpleMessage("Pred minuto"),
         "mnemonicInvalidWord":
             MessageLookupByLibrary.simpleMessage("%1 ni veljavna beseda"),
@@ -539,6 +542,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Skrivni niz lahko vsebuje samo 24 besed"),
         "mnemonicSizeError2": MessageLookupByLibrary.simpleMessage(
             "Skrivni stavek lahko vsebuje samo 12 ali 24 besed"),
+        "monthly": MessageLookupByLibrary.simpleMessage("Mesečno"),
         "monthlyServerCosts":
             MessageLookupByLibrary.simpleMessage("Mesečni stroški strežnika"),
         "moonpay": MessageLookupByLibrary.simpleMessage("MoonPay"),
@@ -581,7 +585,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "notificationInfo": MessageLookupByLibrary.simpleMessage(
             "Da bi ta funkcija delovala pravilno, morajo biti omogočena obvestila"),
         "notificationTitle":
-            MessageLookupByLibrary.simpleMessage("Prejeto %1 NANO"),
+            MessageLookupByLibrary.simpleMessage("Prejeto %1 %2"),
         "notificationWarning":
             MessageLookupByLibrary.simpleMessage("Obvestila onemogočena"),
         "notificationWarningBodyLong": MessageLookupByLibrary.simpleMessage(
@@ -726,7 +730,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Ste prepričani, da hočete skriti ta račun? Lahko ga ponovno dodate kasneje s pritiskom na gumb \"%1\""),
         "removeBlocked": MessageLookupByLibrary.simpleMessage("Odblokiraj"),
         "removeBlockedConfirmation": MessageLookupByLibrary.simpleMessage(
-            "Ali ste prepričani, da želite odblokirati odblokiranje% 1?"),
+            "Ali ste prepričani, da želite odblokirati odblokiranje %1?"),
         "removeContact": MessageLookupByLibrary.simpleMessage("Odstrani stik"),
         "removeContactConfirmation": MessageLookupByLibrary.simpleMessage(
             "Ste prepričani, da hočete izbrisati %1?"),
@@ -742,7 +746,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "representatives": MessageLookupByLibrary.simpleMessage("Predstavniki"),
         "request": MessageLookupByLibrary.simpleMessage("Zahteva"),
         "requestAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("Zahtevite% 1% 2"),
+            MessageLookupByLibrary.simpleMessage("Zahtevite %1 %2"),
         "requestError": MessageLookupByLibrary.simpleMessage(
             "Zahteva ni uspela: Zdi se, da ta uporabnik nima nameščenega Nautilusa ali da so obvestila onemogočena."),
         "requestFrom": MessageLookupByLibrary.simpleMessage("Zahtevaj od"),
@@ -776,6 +780,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "retry": MessageLookupByLibrary.simpleMessage("Poskusite znova"),
         "rootWarning": MessageLookupByLibrary.simpleMessage(
             "It appears your device is \"rooted\", \"jailbroken\", or modified in a way that compromises security. It is recommended that you reset your device to its original state before proceeding."),
+        "save": MessageLookupByLibrary.simpleMessage("Shrani"),
         "scanInstructions": MessageLookupByLibrary.simpleMessage(
             "Zajemi Nano \nnaslov QR kodo"),
         "scanNFC": MessageLookupByLibrary.simpleMessage("Pošlji prek NFC"),
@@ -812,7 +817,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Ne morem zahtevati od sebe"),
         "send": MessageLookupByLibrary.simpleMessage("Pošlji"),
         "sendAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("Pošlji %1 NANO"),
+            MessageLookupByLibrary.simpleMessage("Pošlji %1 %2"),
         "sendAmounts": MessageLookupByLibrary.simpleMessage("Pošlji zneske"),
         "sendError":
             MessageLookupByLibrary.simpleMessage("Napaka. Poskusite kasneje."),
@@ -954,9 +959,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferClose":
             MessageLookupByLibrary.simpleMessage("Pritisni kjerkoli za izhod."),
         "transferComplete": MessageLookupByLibrary.simpleMessage(
-            "%1 NANO uspešno prenešenih v vašo Nautilus denarnico.\n"),
+            "%1 %2 uspešno prenešenih v vašo Nautilus denarnico.\n"),
         "transferConfirmInfo": MessageLookupByLibrary.simpleMessage(
-            "Denarnica z zneskom %1 NANO je bila zaznana.\n"),
+            "Denarnica z zneskom %1 %2 je bila zaznana.\n"),
         "transferConfirmInfoSecond": MessageLookupByLibrary.simpleMessage(
             "Pritisni za prenos zneska.\n"),
         "transferConfirmInfoThird": MessageLookupByLibrary.simpleMessage(
@@ -1038,6 +1043,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "watchOnlySendDisabled": MessageLookupByLibrary.simpleMessage(
             "Pošiljanje je onemogočeno na naslovih samo za gledanje"),
         "weekAgo": MessageLookupByLibrary.simpleMessage("Pred enim tednom"),
+        "weekly": MessageLookupByLibrary.simpleMessage("Tedensko"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
             "Dobrodošli v Nautilus. Za začetek ustvarite novo denarnico ali uvozite že obstoječo."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(

@@ -672,6 +672,11 @@
     "type": "text",
     "description": "change_representative_current_header"
   },
+  "daily": "Dagelijks",
+  "@daily": {
+    "type": "text",
+    "description": "frequency_daily"
+  },
   "dayAgo": "Een dag geleden",
   "@dayAgo": {
     "type": "text",
@@ -687,7 +692,7 @@
     "type": "text",
     "description": "Default account name"
   },
-  "defaultGiftMessage": "Kijk eens naar Nautilus! Ik heb je wat nano gestuurd met deze link:",
+  "defaultGiftMessage": "Kijk eens naar Nautilus! Ik heb je wat %2 gestuurd met deze link:",
   "@defaultGiftMessage": {
     "type": "text",
     "description": "default_gift_message"
@@ -1137,6 +1142,10 @@
     "type": "text",
     "description": "funding_header"
   },
+  "generatingWork": "PoW genereren, dit kan even duren (> 20 seconden)...",
+  "@generatingWork": {
+    "description": "generating_local_work"
+  },
   "getCurrency": "Krijg %2",
   "@getCurrency": {
     "type": "text",
@@ -1547,7 +1556,7 @@
     "type": "text",
     "description": "message_header"
   },
-  "minimumSend": "Het minimum te verzenden bedrag is %1 NANO",
+  "minimumSend": "Het minimum te verzenden bedrag is %1 %2",
   "@minimumSend": {
     "type": "text",
     "description": "send_minimum_error"
@@ -1576,6 +1585,11 @@
   "@mnemonicSizeError2": {
     "type": "text",
     "description": "err"
+  },
+  "monthly": "Maandelijks",
+  "@monthly": {
+    "type": "text",
+    "description": "frequency_monthly"
   },
   "monthlyServerCosts": "Maandelijkse serverkosten",
   "@monthlyServerCosts": {
@@ -2317,6 +2331,11 @@
     "type": "text",
     "description": "Shown to users if they have a rooted Android device or jailbroken iOS device"
   },
+  "save": "Redden",
+  "@save": {
+    "type": "text",
+    "description": "dialog_save"
+  },
   "scanInstructions": "Scan een Nano\nadres QR code",
   "@scanInstructions": {
     "type": "text",
@@ -2427,7 +2446,7 @@
     "type": "text",
     "description": "home_send_cta"
   },
-  "sendAmountConfirm": "Verstuur %1 Nano",
+  "sendAmountConfirm": "Verstuur %1 %2",
   "@sendAmountConfirm": {
     "type": "text",
     "description": "send_amount_confirm"
@@ -3146,6 +3165,11 @@
   "@weekAgo": {
     "type": "text",
     "description": "history_week_ago"
+  },
+  "weekly": "Wekelijks",
+  "@weekly": {
+    "type": "text",
+    "description": "frequency_weekly"
   },
   "welcomeText": "Welkom bij Nautilus. Creëer een nieuwe wallet of importeer een bestaande wallet om verder te gaan.",
   "@welcomeText": {

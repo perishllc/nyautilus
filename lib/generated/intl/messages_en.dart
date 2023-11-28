@@ -238,6 +238,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Choose which unit to display amounts in.\n1 nyano = 0.000001 NANO, or \n1,000,000 nyano = 1 NANO"),
         "currentlyRepresented":
             MessageLookupByLibrary.simpleMessage("Currently Represented By"),
+        "daily": MessageLookupByLibrary.simpleMessage("Daily"),
         "dayAgo": MessageLookupByLibrary.simpleMessage("A day ago"),
         "decryptionError":
             MessageLookupByLibrary.simpleMessage("Decryption Error!"),
@@ -390,6 +391,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fundingBannerHeader":
             MessageLookupByLibrary.simpleMessage("Funding Banner"),
         "fundingHeader": MessageLookupByLibrary.simpleMessage("Funding"),
+        "generatingWork": MessageLookupByLibrary.simpleMessage(
+            "Generating PoW, this may take a while (> 20 seconds)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("Get %2"),
         "getNano": MessageLookupByLibrary.simpleMessage("Get NANO"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("You have a gift!"),
@@ -527,6 +530,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Secret phrase may only contain 24 words"),
         "mnemonicSizeError2": MessageLookupByLibrary.simpleMessage(
             "Secret phrase may only contain 12 or 24 words"),
+        "monthly": MessageLookupByLibrary.simpleMessage("Monthly"),
         "monthlyServerCosts":
             MessageLookupByLibrary.simpleMessage("Monthly Server Costs"),
         "moonpay": MessageLookupByLibrary.simpleMessage("MoonPay"),
@@ -758,6 +762,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "retry": MessageLookupByLibrary.simpleMessage("Retry"),
         "rootWarning": MessageLookupByLibrary.simpleMessage(
             "It appears your device is \"rooted\", \"jailbroken\", or modified in a way that compromises security. It is recommended that you reset your device to its original state before proceeding."),
+        "save": MessageLookupByLibrary.simpleMessage("Save"),
         "scanInstructions":
             MessageLookupByLibrary.simpleMessage("Scan a %2 \naddress QR code"),
         "scanNFC": MessageLookupByLibrary.simpleMessage("Scan NFC"),
@@ -1007,6 +1012,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "watchOnlySendDisabled": MessageLookupByLibrary.simpleMessage(
             "Sends are disabled on watch only addresses"),
         "weekAgo": MessageLookupByLibrary.simpleMessage("A week ago"),
+        "weekly": MessageLookupByLibrary.simpleMessage("Weekly"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(""),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(
             "Welcome to %1. Choose an option to get started or pick a theme using the icon below."),

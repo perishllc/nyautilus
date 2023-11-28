@@ -239,6 +239,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Miktarları hangi birimde görüntüleneceğini seçin.\n1 nyano = 0.000001 NANO veya \n1,000.000 nyano = 1 NANO"),
         "currentlyRepresented":
             MessageLookupByLibrary.simpleMessage("Mevcut Temsilci:"),
+        "daily": MessageLookupByLibrary.simpleMessage("Günlük"),
         "dayAgo": MessageLookupByLibrary.simpleMessage("Bir gün önce"),
         "decryptionError":
             MessageLookupByLibrary.simpleMessage("Şifre Çözme Hatası!"),
@@ -390,6 +391,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fundingBannerHeader":
             MessageLookupByLibrary.simpleMessage("Finansman Afişi"),
         "fundingHeader": MessageLookupByLibrary.simpleMessage("Finansman"),
+        "generatingWork": MessageLookupByLibrary.simpleMessage(
+            "PoW oluşturuluyor, bu biraz zaman alabilir (> 20 saniye)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("%2\'yi al"),
         "getNano": MessageLookupByLibrary.simpleMessage("NANO\'yu edinin"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("Bir yeteneğin var!"),
@@ -531,6 +534,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Gizli cümle 24 kelime olmalı"),
         "mnemonicSizeError2": MessageLookupByLibrary.simpleMessage(
             "Gizli ifade yalnızca 12 veya 24 kelime içerebilir"),
+        "monthly": MessageLookupByLibrary.simpleMessage("Aylık"),
         "monthlyServerCosts":
             MessageLookupByLibrary.simpleMessage("Aylık Sunucu Maliyetleri"),
         "moonpay": MessageLookupByLibrary.simpleMessage("MoonPay"),
@@ -573,7 +577,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "notificationInfo": MessageLookupByLibrary.simpleMessage(
             "Bu özelliğin düzgün çalışması için bildirimlerin etkinleştirilmesi gerekir"),
         "notificationTitle":
-            MessageLookupByLibrary.simpleMessage("%1 NANO Alındı"),
+            MessageLookupByLibrary.simpleMessage("%1 %2 Alındı"),
         "notificationWarning":
             MessageLookupByLibrary.simpleMessage("Bildirimler Devre Dışı"),
         "notificationWarningBodyLong": MessageLookupByLibrary.simpleMessage(
@@ -729,7 +733,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "representatives": MessageLookupByLibrary.simpleMessage("Temsilciler"),
         "request": MessageLookupByLibrary.simpleMessage("Talep"),
         "requestAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("İstek %1% 2"),
+            MessageLookupByLibrary.simpleMessage("İstek %1 %2"),
         "requestError": MessageLookupByLibrary.simpleMessage(
             "İstek Başarısız: Bu kullanıcı Nautilus yüklü görünmüyor, veya bildirimler devre dışı bırakıldı."),
         "requestFrom": MessageLookupByLibrary.simpleMessage("İstek Gönderen"),
@@ -763,6 +767,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "retry": MessageLookupByLibrary.simpleMessage("Tekrar Dene"),
         "rootWarning": MessageLookupByLibrary.simpleMessage(
             "Cihazın \"root\" veya \"jailbreak\" edilmiş gibi görünüyor. Bu durum bir güvenlik riski oluşturuyor. Devam etmeden önce cihazını sıfırlamanı ve eski haline döndürmeni tavsiye ederiz."),
+        "save": MessageLookupByLibrary.simpleMessage("Kaydetmek"),
         "scanInstructions": MessageLookupByLibrary.simpleMessage(
             "Nano Adresi\'nin \n QR Kodu\'nu tarayın"),
         "scanNFC": MessageLookupByLibrary.simpleMessage("NFC ile gönder"),
@@ -798,7 +803,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Kendinden istek yapamıyorum"),
         "send": MessageLookupByLibrary.simpleMessage("Gönder"),
         "sendAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("%1 Nano gönder?"),
+            MessageLookupByLibrary.simpleMessage("%1 %2 gönder?"),
         "sendAmounts":
             MessageLookupByLibrary.simpleMessage("Gönderim Tutarları"),
         "sendError": MessageLookupByLibrary.simpleMessage(
@@ -941,7 +946,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferComplete": MessageLookupByLibrary.simpleMessage(
             "%1 NANO başarıyla Nautilus cüzdanına aktarıldı."),
         "transferConfirmInfo": MessageLookupByLibrary.simpleMessage(
-            "%1 NANO bakiyeye sahip bir cüzdan tespit edildi.\n"),
+            "%1 %2 bakiyeye sahip bir cüzdan tespit edildi.\n"),
         "transferConfirmInfoSecond": MessageLookupByLibrary.simpleMessage(
             "Transfer işlemini başlatmak için onayla butonuna bas.\n"),
         "transferConfirmInfoThird": MessageLookupByLibrary.simpleMessage(
@@ -1025,6 +1030,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "watchOnlySendDisabled": MessageLookupByLibrary.simpleMessage(
             "Yalnızca izleme adreslerinde gönderimler devre dışı bırakıldı"),
         "weekAgo": MessageLookupByLibrary.simpleMessage("Bir hafta önce"),
+        "weekly": MessageLookupByLibrary.simpleMessage("Haftalık"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
             "Nautilus\'a hoşgeldiniz. Devam etmek için yeni bir cüzdan oluşturabilir veya var olanı içe aktarabilirsiniz."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(

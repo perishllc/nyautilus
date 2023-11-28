@@ -103,7 +103,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "blockUser": MessageLookupByLibrary.simpleMessage(
             "Блокиране на този потребител"),
         "blockedAdded":
-            MessageLookupByLibrary.simpleMessage("% 1 е блокиран успешно."),
+            MessageLookupByLibrary.simpleMessage("%1 е блокиран успешно."),
         "blockedExists": MessageLookupByLibrary.simpleMessage(
             "Потребителят вече е блокиран!"),
         "blockedHeader": MessageLookupByLibrary.simpleMessage("Блокиран"),
@@ -116,7 +116,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "blockedNameMissing":
             MessageLookupByLibrary.simpleMessage("Изберете име на Ник"),
         "blockedRemoved":
-            MessageLookupByLibrary.simpleMessage("% 1 е бил отблокиран!"),
+            MessageLookupByLibrary.simpleMessage("%1 е бил отблокиран!"),
         "branchConnectErrorLongDesc": MessageLookupByLibrary.simpleMessage(
             "Изглежда не можем да достигнем до Branch API, това обикновено се дължи на някакъв мрежов проблем или VPN блокиране на връзката.\n\n Все още трябва да можете да използвате приложението както обикновено, но изпращането и получаването на карти за подаръци може да не работи."),
         "branchConnectErrorShortDesc": MessageLookupByLibrary.simpleMessage(
@@ -241,6 +241,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Изберете в коя единица да се показват сумите.\n1 няно = 0.000001 НАНО, или \n1 000 000 нано = 1 NANO"),
         "currentlyRepresented":
             MessageLookupByLibrary.simpleMessage("Сегашният Представител е"),
+        "daily": MessageLookupByLibrary.simpleMessage("Ежедневно"),
         "dayAgo": MessageLookupByLibrary.simpleMessage("Преди ден"),
         "decryptionError":
             MessageLookupByLibrary.simpleMessage("Грешка при декриптиране!"),
@@ -380,7 +381,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "favoriteNameMissing": MessageLookupByLibrary.simpleMessage(
             "Изберете име за този фаворит"),
         "favoriteRemoved":
-            MessageLookupByLibrary.simpleMessage("% 1 е премахнат от любими!"),
+            MessageLookupByLibrary.simpleMessage("%1 е премахнат от любими!"),
         "favoritesHeader": MessageLookupByLibrary.simpleMessage("Любими"),
         "featured": MessageLookupByLibrary.simpleMessage("Препоръчани"),
         "fewDaysAgo": MessageLookupByLibrary.simpleMessage("Преди няколко дни"),
@@ -399,6 +400,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fundingBannerHeader":
             MessageLookupByLibrary.simpleMessage("Банер за финансиране"),
         "fundingHeader": MessageLookupByLibrary.simpleMessage("Финансиране"),
+        "generatingWork": MessageLookupByLibrary.simpleMessage(
+            "Генериране на PoW, това може да отнеме известно време (> 20 секунди)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("Вземете %2"),
         "getNano": MessageLookupByLibrary.simpleMessage("Вземете NANO"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("Имаш дарба!"),
@@ -543,6 +546,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Тайната фраза може да съдържа само 24 думи"),
         "mnemonicSizeError2": MessageLookupByLibrary.simpleMessage(
             "Тайната фраза може да съдържа само 12 или 24 думи"),
+        "monthly": MessageLookupByLibrary.simpleMessage("Месечно"),
         "monthlyServerCosts":
             MessageLookupByLibrary.simpleMessage("Месечни разходи за сървър"),
         "moonpay": MessageLookupByLibrary.simpleMessage("MoonPay"),
@@ -727,7 +731,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Наистина ли искате да скриете този акаунт? Може да го добавите по-късно като натиснете бутона  \"%1\"."),
         "removeBlocked": MessageLookupByLibrary.simpleMessage("Отблокиране"),
         "removeBlockedConfirmation": MessageLookupByLibrary.simpleMessage(
-            "Сигурни ли сте, че искате да деблокирате% 1?"),
+            "Сигурни ли сте, че искате да деблокирате %1?"),
         "removeContact":
             MessageLookupByLibrary.simpleMessage("Премахни Контакт"),
         "removeContactConfirmation": MessageLookupByLibrary.simpleMessage(
@@ -745,7 +749,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Представители"),
         "request": MessageLookupByLibrary.simpleMessage("Заявка"),
         "requestAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("Заявка% 1% 2"),
+            MessageLookupByLibrary.simpleMessage("Заявка %1 %2"),
         "requestError": MessageLookupByLibrary.simpleMessage(
             "Заявката е неуспешна: Изглежда, че този потребител няма инсталиран Nautilus или известията са деактивирани."),
         "requestFrom": MessageLookupByLibrary.simpleMessage("Заявка от"),
@@ -779,6 +783,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "retry": MessageLookupByLibrary.simpleMessage("Повторен опит"),
         "rootWarning": MessageLookupByLibrary.simpleMessage(
             "Изглежда вашето устройство е “рутнато”, “джейлбрейкнато” или модифицирано така, че да може да бъде компроментирано. Препоръчително е да върнете устройството към фабрични настройки преди да продължите. "),
+        "save": MessageLookupByLibrary.simpleMessage("Запазване"),
         "scanInstructions": MessageLookupByLibrary.simpleMessage(
             "Сканирай Nano адрес или QR-код"),
         "scanNFC": MessageLookupByLibrary.simpleMessage("Изпращане чрез NFC"),
@@ -814,7 +819,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Не мога да поискам от себе си"),
         "send": MessageLookupByLibrary.simpleMessage("Изпрати"),
         "sendAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("Изпрати %1 NANO"),
+            MessageLookupByLibrary.simpleMessage("Изпрати %1 %2"),
         "sendAmounts": MessageLookupByLibrary.simpleMessage("Изпратете суми"),
         "sendError": MessageLookupByLibrary.simpleMessage(
             "Възникна грешка. Опитайте по-късно."),
@@ -1046,6 +1051,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "watchOnlySendDisabled": MessageLookupByLibrary.simpleMessage(
             "Изпращанията са деактивирани на адреси само за гледане"),
         "weekAgo": MessageLookupByLibrary.simpleMessage("Преди седмица"),
+        "weekly": MessageLookupByLibrary.simpleMessage("Ежеседмично"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
             "Добре дошли в Nautilus. За да започнете, можете да създадете нов портфейл или да импортирате вече съществуващ."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(

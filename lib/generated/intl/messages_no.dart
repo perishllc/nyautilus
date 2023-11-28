@@ -241,6 +241,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Velg hvilken enhet du vil vise beløp i.\n1 nyano = 0.000001 NANO, eller \n1 000,000 nyano = 1 NANO"),
         "currentlyRepresented":
             MessageLookupByLibrary.simpleMessage("Aktuell representant"),
+        "daily": MessageLookupByLibrary.simpleMessage("Daglig"),
         "dayAgo": MessageLookupByLibrary.simpleMessage("En dag siden"),
         "decryptionError":
             MessageLookupByLibrary.simpleMessage("Dekryptering Feil!"),
@@ -395,6 +396,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fundingBannerHeader":
             MessageLookupByLibrary.simpleMessage("Finansieringsbanner"),
         "fundingHeader": MessageLookupByLibrary.simpleMessage("Finansiering"),
+        "generatingWork": MessageLookupByLibrary.simpleMessage(
+            "Genererer PoW, dette kan ta en stund (> 20 sekunder)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("Få %2"),
         "getNano": MessageLookupByLibrary.simpleMessage("Skaff deg NANO"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("Du har en gave!"),
@@ -527,7 +530,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Melding kopiert"),
         "messageHeader": MessageLookupByLibrary.simpleMessage("Melding"),
         "minimumSend": MessageLookupByLibrary.simpleMessage(
-            "Minste overførselsbeløp er %1 NANO"),
+            "Minste overførselsbeløp er %1 %2"),
         "minuteAgo":
             MessageLookupByLibrary.simpleMessage("For et minutt siden"),
         "mnemonicInvalidWord":
@@ -538,6 +541,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Tilknytningskode kan kun inneholde 24 ord"),
         "mnemonicSizeError2": MessageLookupByLibrary.simpleMessage(
             "Hemmelig setning kan bare inneholde 12 eller 24 ord"),
+        "monthly": MessageLookupByLibrary.simpleMessage("Månedlig"),
         "monthlyServerCosts":
             MessageLookupByLibrary.simpleMessage("Månedlige serverkostnader"),
         "moonpay": MessageLookupByLibrary.simpleMessage("MoonPay"),
@@ -581,7 +585,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "notificationInfo": MessageLookupByLibrary.simpleMessage(
             "For at denne funksjonen skal fungere riktig, må varsler være aktivert"),
         "notificationTitle":
-            MessageLookupByLibrary.simpleMessage("%1 NANO mottatt"),
+            MessageLookupByLibrary.simpleMessage("%1 %2 mottatt"),
         "notificationWarning":
             MessageLookupByLibrary.simpleMessage("Varsler deaktivert"),
         "notificationWarningBodyLong": MessageLookupByLibrary.simpleMessage(
@@ -776,6 +780,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "retry": MessageLookupByLibrary.simpleMessage("Prøv på nytt"),
         "rootWarning": MessageLookupByLibrary.simpleMessage(
             "Din enhet er tilsynelatende \"rooted\", \"jailbroken\", eller endret på en måte som kompromitterer din sikkerhet. Det er anbefalt at du nullstiller enheten til opprinnelig tilstand, før du fortsetter."),
+        "save": MessageLookupByLibrary.simpleMessage("Lagre"),
         "scanInstructions": MessageLookupByLibrary.simpleMessage(
             "Scan en NANO \nadresse QR-kode"),
         "scanNFC": MessageLookupByLibrary.simpleMessage("Send via NFC"),
@@ -811,8 +816,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "selfSendError":
             MessageLookupByLibrary.simpleMessage("Kan ikke be om fra meg selv"),
         "send": MessageLookupByLibrary.simpleMessage("Send"),
-        "sendAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("Send %1 NANO"),
+        "sendAmountConfirm": MessageLookupByLibrary.simpleMessage("Send %1 %2"),
         "sendAmounts": MessageLookupByLibrary.simpleMessage("Send beløp"),
         "sendError": MessageLookupByLibrary.simpleMessage(
             "Det oppsto en feil. Prøv igjen senere."),
@@ -1032,6 +1036,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "watchOnlySendDisabled": MessageLookupByLibrary.simpleMessage(
             "Sending er deaktivert på adresser som kun er på vakt"),
         "weekAgo": MessageLookupByLibrary.simpleMessage("En uke siden"),
+        "weekly": MessageLookupByLibrary.simpleMessage("Ukentlig"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
             "Velkommen til Nautilus. For å starte, kan du opprette en ny lommebok eller importere en eksisterende."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(

@@ -247,6 +247,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Elige en qué unidad quieres mostrar los importes.\n1 nyano = 0.000001 NANO, o \n1.000.000 nyano = 1 NANO"),
         "currentlyRepresented":
             MessageLookupByLibrary.simpleMessage("Su representante actual es"),
+        "daily": MessageLookupByLibrary.simpleMessage("A diario"),
         "dayAgo": MessageLookupByLibrary.simpleMessage("Hace un día"),
         "decryptionError":
             MessageLookupByLibrary.simpleMessage("¡Error de descifrado!"),
@@ -408,6 +409,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fundingBannerHeader":
             MessageLookupByLibrary.simpleMessage("Bandera de Financiación"),
         "fundingHeader": MessageLookupByLibrary.simpleMessage("Financiación"),
+        "generatingWork": MessageLookupByLibrary.simpleMessage(
+            "Generando PoW, esto puede tardar un poco (> 20 segundos)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("Obtener %2"),
         "getNano": MessageLookupByLibrary.simpleMessage("Obtén NANO"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("¡Tienes un regalo!"),
@@ -552,6 +555,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "La frase secreta solo puede contener 24 palabras"),
         "mnemonicSizeError2": MessageLookupByLibrary.simpleMessage(
             "La frase secreta solo puede contener 12 o 24 palabras"),
+        "monthly": MessageLookupByLibrary.simpleMessage("Mensual"),
         "monthlyServerCosts": MessageLookupByLibrary.simpleMessage(
             "Costos mensuales del Servidor"),
         "moonpay": MessageLookupByLibrary.simpleMessage("MoonPay"),
@@ -594,7 +598,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "notificationInfo": MessageLookupByLibrary.simpleMessage(
             "Para que esta función funcione correctamente, las notificaciones deben estar habilitadas"),
         "notificationTitle":
-            MessageLookupByLibrary.simpleMessage("%1 NANO recibidos"),
+            MessageLookupByLibrary.simpleMessage("%1 %2 recibidos"),
         "notificationWarning": MessageLookupByLibrary.simpleMessage(
             "Notificaciones deshabilitadas"),
         "notificationWarningBodyLong": MessageLookupByLibrary.simpleMessage(
@@ -791,6 +795,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "retry": MessageLookupByLibrary.simpleMessage("Intentar de nuevo"),
         "rootWarning": MessageLookupByLibrary.simpleMessage(
             "Parece que su dispositivo está \"rooteado\", \"liberado\" o modificado de una manera que compromete su seguridad. Se recomienda que restablezca su dispositivo a su estado original antes de continuar."),
+        "save": MessageLookupByLibrary.simpleMessage("Ahorrar"),
         "scanInstructions": MessageLookupByLibrary.simpleMessage(
             "Escanear el código QR\n de una billetera de Nano."),
         "scanNFC":
@@ -830,7 +835,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "No se puede solicitar a mí mismo"),
         "send": MessageLookupByLibrary.simpleMessage("Enviar"),
         "sendAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("Enviar %1 NANO"),
+            MessageLookupByLibrary.simpleMessage("Enviar %1 %2"),
         "sendAmounts":
             MessageLookupByLibrary.simpleMessage("Enviar cantidades"),
         "sendError": MessageLookupByLibrary.simpleMessage(
@@ -979,7 +984,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferComplete": MessageLookupByLibrary.simpleMessage(
             "%1 NANO se han transferido con éxito a su billetera de Nautilus."),
         "transferConfirmInfo": MessageLookupByLibrary.simpleMessage(
-            "Se ha detectado una billetera con un balance de %1 NANO.\n"),
+            "Se ha detectado una billetera con un balance de %1 %2.\n"),
         "transferConfirmInfoSecond": MessageLookupByLibrary.simpleMessage(
             "Pulse confirmar para transferir los fondos.\n"),
         "transferConfirmInfoThird": MessageLookupByLibrary.simpleMessage(
@@ -1065,6 +1070,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "watchOnlySendDisabled": MessageLookupByLibrary.simpleMessage(
             "Envíos están deshabilitados en direcciones de sólo ver"),
         "weekAgo": MessageLookupByLibrary.simpleMessage("Hace una semana"),
+        "weekly": MessageLookupByLibrary.simpleMessage("Semanalmente"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
             "Bienvenido a Nautilus. Para continuar, crea una billetera nueva o importa una ya existente."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(

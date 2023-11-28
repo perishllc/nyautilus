@@ -672,6 +672,11 @@
     "type": "text",
     "description": "change_representative_current_header"
   },
+  "daily": "Täglich",
+  "@daily": {
+    "type": "text",
+    "description": "frequency_daily"
+  },
   "dayAgo": "Vor einem Tag",
   "@dayAgo": {
     "type": "text",
@@ -1137,6 +1142,10 @@
     "type": "text",
     "description": "funding_header"
   },
+  "generatingWork": "PoW wird generiert, dies kann eine Weile dauern (> 20 Sekunden) ...",
+  "@generatingWork": {
+    "description": "generating_local_work"
+  },
   "getCurrency": "Holen Sie sich %2",
   "@getCurrency": {
     "type": "text",
@@ -1547,7 +1556,7 @@
     "type": "text",
     "description": "message_header"
   },
-  "minimumSend": "Der Mindest-Sendebetrag beträgt %1 NANO",
+  "minimumSend": "Der Mindest-Sendebetrag beträgt %1 %2",
   "@minimumSend": {
     "type": "text",
     "description": "send_minimum_error"
@@ -1576,6 +1585,11 @@
   "@mnemonicSizeError2": {
     "type": "text",
     "description": "err"
+  },
+  "monthly": "Monatlich",
+  "@monthly": {
+    "type": "text",
+    "description": "frequency_monthly"
   },
   "monthlyServerCosts": "Monatliche Serverkosten",
   "@monthlyServerCosts": {
@@ -2317,6 +2331,11 @@
     "type": "text",
     "description": "Shown to users if they have a rooted Android device or jailbroken iOS device"
   },
+  "save": "Speichern",
+  "@save": {
+    "type": "text",
+    "description": "dialog_save"
+  },
   "scanInstructions": "Scanne einen\nNano-Address-QR-Code",
   "@scanInstructions": {
     "type": "text",
@@ -2427,7 +2446,7 @@
     "type": "text",
     "description": "home_send_cta"
   },
-  "sendAmountConfirm": "%1 NANO senden?",
+  "sendAmountConfirm": "%1 %2 senden?",
   "@sendAmountConfirm": {
     "type": "text",
     "description": "send_amount_confirm"
@@ -3146,6 +3165,11 @@
   "@weekAgo": {
     "type": "text",
     "description": "history_week_ago"
+  },
+  "weekly": "Wöchentlich",
+  "@weekly": {
+    "type": "text",
+    "description": "frequency_weekly"
   },
   "welcomeText": "Willkommen bei Nautilus. Um fortzufahren, benötigst du ein Wallet. Erstelle bitte ein neues Wallet oder importiere ein bereits existierendes Wallet.",
   "@welcomeText": {

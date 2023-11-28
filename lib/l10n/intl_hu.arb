@@ -235,7 +235,7 @@
     "type": "text",
     "description": "settings_fingerprint_method"
   },
-  "blockedAdded": "% 1 sikeresen letiltva.",
+  "blockedAdded": "%1 sikeresen letiltva.",
   "@blockedAdded": {
     "type": "text",
     "description": "blocked_added"
@@ -270,7 +270,7 @@
     "type": "text",
     "description": "blocked_name_missing"
   },
-  "blockedRemoved": "% 1 feloldva!",
+  "blockedRemoved": "%1 feloldva!",
   "@blockedRemoved": {
     "type": "text",
     "description": "blocked_removed"
@@ -672,6 +672,11 @@
     "type": "text",
     "description": "change_representative_current_header"
   },
+  "daily": "Napi",
+  "@daily": {
+    "type": "text",
+    "description": "frequency_daily"
+  },
   "dayAgo": "Egy napja",
   "@dayAgo": {
     "type": "text",
@@ -687,7 +692,7 @@
     "type": "text",
     "description": "Default account name"
   },
-  "defaultGiftMessage": "Nézd meg a Nautilust! Küldtem neked egy nano-t ezzel a linkkel:",
+  "defaultGiftMessage": "Nézd meg a Nautilust! Küldtem neked egy %2-t ezzel a linkkel:",
   "@defaultGiftMessage": {
     "type": "text",
     "description": "default_gift_message"
@@ -1072,7 +1077,7 @@
     "type": "text",
     "description": "favorite_name_missing"
   },
-  "favoriteRemoved": "% 1 el lett távolítva a kedvencek közül!",
+  "favoriteRemoved": "%1 el lett távolítva a kedvencek közül!",
   "@favoriteRemoved": {
     "type": "text",
     "description": "favorite_removed"
@@ -1136,6 +1141,10 @@
   "@fundingHeader": {
     "type": "text",
     "description": "funding_header"
+  },
+  "generatingWork": "PoW generálása, ez eltarthat egy ideig (> 20 másodperc)...",
+  "@generatingWork": {
+    "description": "generating_local_work"
   },
   "getCurrency": "Szerezze be a %2-t",
   "@getCurrency": {
@@ -1547,7 +1556,7 @@
     "type": "text",
     "description": "message_header"
   },
-  "minimumSend": "A minimális küldési összeg:% 1% 2",
+  "minimumSend": "A minimális küldési összeg: %1 %2",
   "@minimumSend": {
     "type": "text",
     "description": "send_minimum_error"
@@ -1576,6 +1585,11 @@
   "@mnemonicSizeError2": {
     "type": "text",
     "description": "err"
+  },
+  "monthly": "Havi",
+  "@monthly": {
+    "type": "text",
+    "description": "frequency_monthly"
   },
   "monthlyServerCosts": "Havi szerverköltségek",
   "@monthlyServerCosts": {
@@ -1712,7 +1726,7 @@
     "type": "text",
     "description": "notifications_settings"
   },
-  "notificationTitle": "Kaptál %1 NANO-t",
+  "notificationTitle": "Kaptál %1 %2-t",
   "@notificationTitle": {
     "type": "text",
     "description": "notification_title"
@@ -2167,7 +2181,7 @@
     "type": "text",
     "description": "blocked_remove_btn"
   },
-  "removeBlockedConfirmation": "Biztosan fel akarja oldani a (z)% 1 blokkolását?",
+  "removeBlockedConfirmation": "Biztosan fel akarja oldani a (z) %1 blokkolását?",
   "@removeBlockedConfirmation": {
     "type": "text",
     "description": "blocked_remove_sure"
@@ -2217,7 +2231,7 @@
     "type": "text",
     "description": "home_request_cta"
   },
-  "requestAmountConfirm": "% 1% 2 kérés",
+  "requestAmountConfirm": "%1 %2 kérés",
   "@requestAmountConfirm": {
     "type": "text",
     "description": "request_pin_description"
@@ -2316,6 +2330,11 @@
   "@rootWarning": {
     "type": "text",
     "description": "Shown to users if they have a rooted Android device or jailbroken iOS device"
+  },
+  "save": "Megment",
+  "@save": {
+    "type": "text",
+    "description": "dialog_save"
   },
   "scanInstructions": "Olvass be QR kóddal egy Nano \ncímet",
   "@scanInstructions": {
@@ -2427,7 +2446,7 @@
     "type": "text",
     "description": "home_send_cta"
   },
-  "sendAmountConfirm": "%1 Nano küldése?",
+  "sendAmountConfirm": "%1 %2 küldése?",
   "@sendAmountConfirm": {
     "type": "text",
     "description": "send_amount_confirm"
@@ -3146,6 +3165,11 @@
   "@weekAgo": {
     "type": "text",
     "description": "history_week_ago"
+  },
+  "weekly": "Heti",
+  "@weekly": {
+    "type": "text",
+    "description": "frequency_weekly"
   },
   "welcomeText": "Üdvözöllek a Nautilusban! Hozz létre egy új tárcát, vagy importálj egy létezőt.",
   "@welcomeText": {

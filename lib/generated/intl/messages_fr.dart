@@ -255,6 +255,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Choisissez l\'unité dans laquelle afficher les montants.\n1 nyano = 0,000001 NANO, ou \n1 000 000 de nyano = 1 NANO"),
         "currentlyRepresented":
             MessageLookupByLibrary.simpleMessage("Représenté par"),
+        "daily": MessageLookupByLibrary.simpleMessage("Quotidien"),
         "dayAgo": MessageLookupByLibrary.simpleMessage("Il y a un jour"),
         "decryptionError":
             MessageLookupByLibrary.simpleMessage("Erreur de déchiffrement !"),
@@ -416,6 +417,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fundingBannerHeader":
             MessageLookupByLibrary.simpleMessage("Bannière de donation"),
         "fundingHeader": MessageLookupByLibrary.simpleMessage("Donation"),
+        "generatingWork": MessageLookupByLibrary.simpleMessage(
+            "Génération de PoW, cela peut prendre un certain temps (> 20 secondes)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("Obtenez %2"),
         "getNano": MessageLookupByLibrary.simpleMessage("Obtenez NANO"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("Tu as un cadeau !"),
@@ -558,6 +561,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "La phrase secrète ne peut contenir que 24 mots"),
         "mnemonicSizeError2": MessageLookupByLibrary.simpleMessage(
             "La phrase secrète ne peut contenir que 12 ou 24 mots"),
+        "monthly": MessageLookupByLibrary.simpleMessage("Mensuel"),
         "monthlyServerCosts":
             MessageLookupByLibrary.simpleMessage("Coût mensuel des serveurs"),
         "moonpay": MessageLookupByLibrary.simpleMessage("MoonPay"),
@@ -799,6 +803,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "retry": MessageLookupByLibrary.simpleMessage("Réessayer"),
         "rootWarning": MessageLookupByLibrary.simpleMessage(
             "Votre appareil semble débridé ou modifié, ce qui en compromet sa sécurité. Il est recommandé de réinitialiser votre appareil en son état d\'origine avant de continuer."),
+        "save": MessageLookupByLibrary.simpleMessage("Sauvegarder"),
         "scanInstructions": MessageLookupByLibrary.simpleMessage(
             "Scanner le code QR d’une adresse Nano"),
         "scanNFC": MessageLookupByLibrary.simpleMessage("Envoyer par NFC"),
@@ -1073,6 +1078,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "watchOnlySendDisabled": MessageLookupByLibrary.simpleMessage(
             "Les envois sont désactivés sur les adresses de surveillance uniquement"),
         "weekAgo": MessageLookupByLibrary.simpleMessage("Il y a une semaine"),
+        "weekly": MessageLookupByLibrary.simpleMessage("Hebdomadaire"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
             "Bienvenue dans Nautilus. Avant de continuer, veuillez créer un nouveau portefeuille ou en importer un existant."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(

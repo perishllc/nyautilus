@@ -672,6 +672,11 @@
     "type": "text",
     "description": "change_representative_current_header"
   },
+  "daily": "Quotidiano",
+  "@daily": {
+    "type": "text",
+    "description": "frequency_daily"
+  },
   "dayAgo": "Un giorno fa",
   "@dayAgo": {
     "type": "text",
@@ -1137,6 +1142,10 @@
     "type": "text",
     "description": "funding_header"
   },
+  "generatingWork": "Generazione PoW, l'operazione potrebbe richiedere del tempo (> 20 secondi)...",
+  "@generatingWork": {
+    "description": "generating_local_work"
+  },
   "getCurrency": "Ottieni %2",
   "@getCurrency": {
     "type": "text",
@@ -1576,6 +1585,11 @@
   "@mnemonicSizeError2": {
     "type": "text",
     "description": "err"
+  },
+  "monthly": "Mensile",
+  "@monthly": {
+    "type": "text",
+    "description": "frequency_monthly"
   },
   "monthlyServerCosts": "Costi mensili del server",
   "@monthlyServerCosts": {
@@ -2317,6 +2331,11 @@
     "type": "text",
     "description": "Shown to users if they have a rooted Android device or jailbroken iOS device"
   },
+  "save": "Salva",
+  "@save": {
+    "type": "text",
+    "description": "dialog_save"
+  },
   "scanInstructions": "Scansiona un \ncodice QR Nano",
   "@scanInstructions": {
     "type": "text",
@@ -2427,7 +2446,7 @@
     "type": "text",
     "description": "home_send_cta"
   },
-  "sendAmountConfirm": "Inviare %1 Nano?",
+  "sendAmountConfirm": "Inviare %1 %2?",
   "@sendAmountConfirm": {
     "type": "text",
     "description": "send_amount_confirm"
@@ -2887,7 +2906,7 @@
     "type": "text",
     "description": "transfer_close_text"
   },
-  "transferComplete": "%1 NANO trasferiti con successo sul tuo portafoglio Nautilus.",
+  "transferComplete": "%1 %2 trasferiti con successo sul tuo portafoglio Nautilus.",
   "@transferComplete": {
     "type": "text",
     "description": "transfer_complete_text"
@@ -3146,6 +3165,11 @@
   "@weekAgo": {
     "type": "text",
     "description": "history_week_ago"
+  },
+  "weekly": "settimanalmente",
+  "@weekly": {
+    "type": "text",
+    "description": "frequency_weekly"
   },
   "welcomeText": "Benvenuto in Nautilus. Per continuare, puoi creare un nuovo portafoglio o importarne uno esistente.",
   "@welcomeText": {

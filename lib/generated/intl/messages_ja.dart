@@ -205,6 +205,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "currencyModeInfo": MessageLookupByLibrary.simpleMessage(
             "金額を表示する単位を選択します。\n1 ニャノ = 0.000001 ナノ、または \n1,000,000 ニャノ = 1 ナノ"),
         "currentlyRepresented": MessageLookupByLibrary.simpleMessage("現在の代理人"),
+        "daily": MessageLookupByLibrary.simpleMessage("毎日"),
         "dayAgo": MessageLookupByLibrary.simpleMessage("昨日"),
         "decryptionError": MessageLookupByLibrary.simpleMessage("復号化エラー！"),
         "defaultAccountName": MessageLookupByLibrary.simpleMessage("メインアカウント"),
@@ -337,6 +338,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fundingBannerHeader":
             MessageLookupByLibrary.simpleMessage("ファンディング バナー"),
         "fundingHeader": MessageLookupByLibrary.simpleMessage("資金調達"),
+        "generatingWork": MessageLookupByLibrary.simpleMessage(
+            "PoW を生成しています。これにはしばらく時間がかかる場合があります (20 秒以上)。"),
         "getCurrency": MessageLookupByLibrary.simpleMessage("%2 を取得"),
         "getNano": MessageLookupByLibrary.simpleMessage("ナノを入手"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("おまえには贈り物がある！"),
@@ -462,6 +465,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "シークレットフレーズには24語しか含めることができません"),
         "mnemonicSizeError2": MessageLookupByLibrary.simpleMessage(
             "秘密のフレーズには 12 語または 24 語のみを含めることができます"),
+        "monthly": MessageLookupByLibrary.simpleMessage("毎月"),
         "monthlyServerCosts": MessageLookupByLibrary.simpleMessage("月額サーバー費用"),
         "moonpay": MessageLookupByLibrary.simpleMessage("MoonPay"),
         "moreSettings": MessageLookupByLibrary.simpleMessage("その他の設定"),
@@ -670,6 +674,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "retry": MessageLookupByLibrary.simpleMessage("再試行"),
         "rootWarning": MessageLookupByLibrary.simpleMessage(
             "お使いの電子機器は制限が不正に無効化されており、セキュリティが不十分な状態です。作業を進行する前に元の状態にリセットするよう推奨します。"),
+        "save": MessageLookupByLibrary.simpleMessage("保存"),
         "scanInstructions":
             MessageLookupByLibrary.simpleMessage("ナノ \n アドレスのQRコードをスキャンします"),
         "scanNFC": MessageLookupByLibrary.simpleMessage("NFC経由で送信"),
@@ -898,6 +903,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "watchOnlySendDisabled":
             MessageLookupByLibrary.simpleMessage("監視専用アドレスでは送信が無効になっています"),
         "weekAgo": MessageLookupByLibrary.simpleMessage("1週間前"),
+        "weekly": MessageLookupByLibrary.simpleMessage("毎週"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
             "ナトリアムへようこそ。最初に、新しいウォレットを作成するか、既存のウォレットをインポートします。"),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(

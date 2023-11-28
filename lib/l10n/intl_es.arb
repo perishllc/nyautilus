@@ -672,6 +672,11 @@
     "type": "text",
     "description": "change_representative_current_header"
   },
+  "daily": "A diario",
+  "@daily": {
+    "type": "text",
+    "description": "frequency_daily"
+  },
   "dayAgo": "Hace un día",
   "@dayAgo": {
     "type": "text",
@@ -1137,6 +1142,10 @@
     "type": "text",
     "description": "funding_header"
   },
+  "generatingWork": "Generando PoW, esto puede tardar un poco (> 20 segundos)...",
+  "@generatingWork": {
+    "description": "generating_local_work"
+  },
   "getCurrency": "Obtener %2",
   "@getCurrency": {
     "type": "text",
@@ -1577,6 +1586,11 @@
     "type": "text",
     "description": "err"
   },
+  "monthly": "Mensual",
+  "@monthly": {
+    "type": "text",
+    "description": "frequency_monthly"
+  },
   "monthlyServerCosts": "Costos mensuales del Servidor",
   "@monthlyServerCosts": {
     "type": "text",
@@ -1712,7 +1726,7 @@
     "type": "text",
     "description": "notifications_settings"
   },
-  "notificationTitle": "%1 NANO recibidos",
+  "notificationTitle": "%1 %2 recibidos",
   "@notificationTitle": {
     "type": "text",
     "description": "notification_title"
@@ -2317,6 +2331,11 @@
     "type": "text",
     "description": "Shown to users if they have a rooted Android device or jailbroken iOS device"
   },
+  "save": "Ahorrar",
+  "@save": {
+    "type": "text",
+    "description": "dialog_save"
+  },
   "scanInstructions": "Escanear el código QR\n de una billetera de Nano.",
   "@scanInstructions": {
     "type": "text",
@@ -2427,7 +2446,7 @@
     "type": "text",
     "description": "home_send_cta"
   },
-  "sendAmountConfirm": "Enviar %1 NANO",
+  "sendAmountConfirm": "Enviar %1 %2",
   "@sendAmountConfirm": {
     "type": "text",
     "description": "send_amount_confirm"
@@ -2892,7 +2911,7 @@
     "type": "text",
     "description": "transfer_complete_text"
   },
-  "transferConfirmInfo": "Se ha detectado una billetera con un balance de %1 NANO.\n",
+  "transferConfirmInfo": "Se ha detectado una billetera con un balance de %1 %2.\n",
   "@transferConfirmInfo": {
     "type": "text",
     "description": "transfer_confirm_info_first"
@@ -3146,6 +3165,11 @@
   "@weekAgo": {
     "type": "text",
     "description": "history_week_ago"
+  },
+  "weekly": "Semanalmente",
+  "@weekly": {
+    "type": "text",
+    "description": "frequency_weekly"
   },
   "welcomeText": "Bienvenido a Nautilus. Para continuar, crea una billetera nueva o importa una ya existente.",
   "@welcomeText": {

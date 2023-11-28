@@ -150,7 +150,7 @@
     "type": "text",
     "description": "send_enter_amount"
   },
-  "appWallet": "% 1 Carteira",
+  "appWallet": "%1 Carteira",
   "@appWallet": {
     "type": "text",
     "description": "app_wallet"
@@ -235,7 +235,7 @@
     "type": "text",
     "description": "settings_fingerprint_method"
   },
-  "blockedAdded": "% 1 bloqueado com sucesso.",
+  "blockedAdded": "%1 bloqueado com sucesso.",
   "@blockedAdded": {
     "type": "text",
     "description": "blocked_added"
@@ -270,7 +270,7 @@
     "type": "text",
     "description": "blocked_name_missing"
   },
-  "blockedRemoved": "O% 1 foi desbloqueado!",
+  "blockedRemoved": "O %1 foi desbloqueado!",
   "@blockedRemoved": {
     "type": "text",
     "description": "blocked_removed"
@@ -672,6 +672,11 @@
     "type": "text",
     "description": "change_representative_current_header"
   },
+  "daily": "Diário",
+  "@daily": {
+    "type": "text",
+    "description": "frequency_daily"
+  },
   "dayAgo": "Um dia atrás",
   "@dayAgo": {
     "type": "text",
@@ -687,7 +692,7 @@
     "type": "text",
     "description": "Default account name"
   },
-  "defaultGiftMessage": "Confira Nautilus! Enviei-lhe alguns nano com este link:",
+  "defaultGiftMessage": "Confira Nautilus! Enviei-lhe alguns %2 com este link:",
   "@defaultGiftMessage": {
     "type": "text",
     "description": "default_gift_message"
@@ -997,7 +1002,7 @@
     "type": "text",
     "description": "example_rec_recipient_message"
   },
-  "exchangeCurrency": "Troca % 2",
+  "exchangeCurrency": "Troca %2",
   "@exchangeCurrency": {
     "type": "text",
     "description": "exchange_currency"
@@ -1072,7 +1077,7 @@
     "type": "text",
     "description": "favorite_name_missing"
   },
-  "favoriteRemoved": "O% 1 foi removido dos favoritos!",
+  "favoriteRemoved": "O %1 foi removido dos favoritos!",
   "@favoriteRemoved": {
     "type": "text",
     "description": "favorite_removed"
@@ -1137,7 +1142,11 @@
     "type": "text",
     "description": "funding_header"
   },
-  "getCurrency": "Obtenha % 2",
+  "generatingWork": "Gerando PoW, isso pode demorar um pouco (> 20 segundos)...",
+  "@generatingWork": {
+    "description": "generating_local_work"
+  },
+  "getCurrency": "Obtenha %2",
   "@getCurrency": {
     "type": "text",
     "description": "get_currency"
@@ -1576,6 +1585,11 @@
   "@mnemonicSizeError2": {
     "type": "text",
     "description": "err"
+  },
+  "monthly": "Por mês",
+  "@monthly": {
+    "type": "text",
+    "description": "frequency_monthly"
   },
   "monthlyServerCosts": "Custos Mensais do Servidor",
   "@monthlyServerCosts": {
@@ -2167,7 +2181,7 @@
     "type": "text",
     "description": "blocked_remove_btn"
   },
-  "removeBlockedConfirmation": "Tem certeza de que deseja desbloquear o% 1?",
+  "removeBlockedConfirmation": "Tem certeza de que deseja desbloquear o%1?",
   "@removeBlockedConfirmation": {
     "type": "text",
     "description": "blocked_remove_sure"
@@ -2217,7 +2231,7 @@
     "type": "text",
     "description": "home_request_cta"
   },
-  "requestAmountConfirm": "Solicitação% 1% 2",
+  "requestAmountConfirm": "Solicitação %1 %2",
   "@requestAmountConfirm": {
     "type": "text",
     "description": "request_pin_description"
@@ -2316,6 +2330,11 @@
   "@rootWarning": {
     "type": "text",
     "description": "Shown to users if they have a rooted Android device or jailbroken iOS device"
+  },
+  "save": "Salvar",
+  "@save": {
+    "type": "text",
+    "description": "dialog_save"
   },
   "scanInstructions": "Escaneie o código QR \nde um endereço Nano",
   "@scanInstructions": {
@@ -2427,7 +2446,7 @@
     "type": "text",
     "description": "home_send_cta"
   },
-  "sendAmountConfirm": "Enviar %1 NANO?",
+  "sendAmountConfirm": "Enviar %1 %2?",
   "@sendAmountConfirm": {
     "type": "text",
     "description": "send_amount_confirm"
@@ -2567,7 +2586,7 @@
     "type": "text",
     "description": "nautilus_share"
   },
-  "shareApp": "Compartilhar % 1",
+  "shareApp": "Compartilhar %1",
   "@shareApp": {
     "type": "text",
     "description": "settings_share"
@@ -2687,7 +2706,7 @@
     "type": "text",
     "description": "send_someone"
   },
-  "spendCurrency": "Gastar % 2",
+  "spendCurrency": "Gastar %2",
   "@spendCurrency": {
     "type": "text",
     "description": "spend_currency"
@@ -3027,12 +3046,12 @@
     "type": "text",
     "description": "url_empty"
   },
-  "useAppRep": "Usar % 1 Rep",
+  "useAppRep": "Usar %1 Rep",
   "@useAppRep": {
     "type": "text",
     "description": "use app node as rep"
   },
-  "useCurrency": "Usar % 2",
+  "useCurrency": "Usar %2",
   "@useCurrency": {
     "type": "text",
     "description": "use_currency"
@@ -3146,6 +3165,11 @@
   "@weekAgo": {
     "type": "text",
     "description": "history_week_ago"
+  },
+  "weekly": "Semanalmente",
+  "@weekly": {
+    "type": "text",
+    "description": "frequency_weekly"
   },
   "welcomeText": "Bem-vindo a Nautilus. Para continuar, você pode criar uma nova carteira ou importar uma existente.",
   "@welcomeText": {

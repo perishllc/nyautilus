@@ -103,7 +103,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "blockUser":
             MessageLookupByLibrary.simpleMessage("Zablokuj tego użytkownika"),
         "blockedAdded": MessageLookupByLibrary.simpleMessage(
-            "% 1 został pomyślnie zablokowany."),
+            "%1 został pomyślnie zablokowany."),
         "blockedExists":
             MessageLookupByLibrary.simpleMessage("Użytkownik już zablokowany!"),
         "blockedHeader": MessageLookupByLibrary.simpleMessage("Zablokowany"),
@@ -116,7 +116,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "blockedNameMissing":
             MessageLookupByLibrary.simpleMessage("Wybierz pseudonim"),
         "blockedRemoved":
-            MessageLookupByLibrary.simpleMessage("% 1 został odblokowany!"),
+            MessageLookupByLibrary.simpleMessage("%1 został odblokowany!"),
         "branchConnectErrorLongDesc": MessageLookupByLibrary.simpleMessage(
             "Wydaje się, że nie możemy połączyć się z interfejsem Branch API, jest to zwykle spowodowane jakimś problemem z siecią lub blokowaniem połączenia przez VPN.\n\n Nadal powinno być możliwe normalne korzystanie z aplikacji, jednak wysyłanie i odbieranie kart podarunkowych może nie działać."),
         "branchConnectErrorShortDesc": MessageLookupByLibrary.simpleMessage(
@@ -238,13 +238,14 @@ class MessageLookup extends MessageLookupByLibrary {
             "Wybierz jednostkę, w której chcesz wyświetlić kwoty.\n1 nyano = 0.000001 NANO, lub \n1 000 000 nyano = 1 NANO"),
         "currentlyRepresented": MessageLookupByLibrary.simpleMessage(
             "Obecnie Representowany Przez"),
+        "daily": MessageLookupByLibrary.simpleMessage("Codziennie"),
         "dayAgo": MessageLookupByLibrary.simpleMessage("Dzień temu"),
         "decryptionError":
             MessageLookupByLibrary.simpleMessage("Błąd deszyfrowania!"),
         "defaultAccountName":
             MessageLookupByLibrary.simpleMessage("Główne konto"),
         "defaultGiftMessage": MessageLookupByLibrary.simpleMessage(
-            "Sprawdź Nautilusa! Wysłałem Ci trochę nano z tym linkiem:"),
+            "Sprawdź Nautilusa! Wysłałem Ci trochę %2 z tym linkiem:"),
         "defaultNewAccountName":
             MessageLookupByLibrary.simpleMessage("Konto %1"),
         "delete": MessageLookupByLibrary.simpleMessage("Usuń"),
@@ -373,7 +374,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "favoriteNameMissing": MessageLookupByLibrary.simpleMessage(
             "Wybierz nazwę dla tego Ulubionego"),
         "favoriteRemoved": MessageLookupByLibrary.simpleMessage(
-            "% 1 został usunięty z ulubionych!"),
+            "%1 został usunięty z ulubionych!"),
         "favoritesHeader": MessageLookupByLibrary.simpleMessage("Ulubione"),
         "featured": MessageLookupByLibrary.simpleMessage("Polecane"),
         "fewDaysAgo": MessageLookupByLibrary.simpleMessage("Kilka dni temu"),
@@ -392,6 +393,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fundingBannerHeader":
             MessageLookupByLibrary.simpleMessage("Baner finansowania"),
         "fundingHeader": MessageLookupByLibrary.simpleMessage("Finansowanie"),
+        "generatingWork": MessageLookupByLibrary.simpleMessage(
+            "Generowanie PoW może zająć trochę czasu (> 20 sekund)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("Uzyskaj %2"),
         "getNano": MessageLookupByLibrary.simpleMessage("Zdobądź NANO"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("Masz dar!"),
@@ -525,7 +528,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Wiadomość skopiowana"),
         "messageHeader": MessageLookupByLibrary.simpleMessage("Wiadomość"),
         "minimumSend": MessageLookupByLibrary.simpleMessage(
-            "Minimalna kwota wysłania to% 1% 2"),
+            "Minimalna kwota wysłania to %1 %2"),
         "minuteAgo": MessageLookupByLibrary.simpleMessage("Minutę temu"),
         "mnemonicInvalidWord":
             MessageLookupByLibrary.simpleMessage("%1 nie jest ważnym słowem"),
@@ -535,6 +538,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Sekretna fraza może zawierać tylko 24 słowa"),
         "mnemonicSizeError2": MessageLookupByLibrary.simpleMessage(
             "Tajna fraza może zawierać tylko 12 lub 24 słowa"),
+        "monthly": MessageLookupByLibrary.simpleMessage("Miesięczny"),
         "monthlyServerCosts":
             MessageLookupByLibrary.simpleMessage("Miesięczne koszty serwera"),
         "moonpay": MessageLookupByLibrary.simpleMessage("MoonPay"),
@@ -721,7 +725,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Czy jesteś pewny że chcesz schować to konto? Możesz dodać je później naciskając przycisk %1."),
         "removeBlocked": MessageLookupByLibrary.simpleMessage("Odblokuj"),
         "removeBlockedConfirmation": MessageLookupByLibrary.simpleMessage(
-            "Czy na pewno chcesz odblokować% 1?"),
+            "Czy na pewno chcesz odblokować %1?"),
         "removeContact": MessageLookupByLibrary.simpleMessage("Usuń kontakt"),
         "removeContactConfirmation": MessageLookupByLibrary.simpleMessage(
             "Czy jesteś pewny że chcesz usunąć %1?"),
@@ -737,7 +741,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Przedstawiciele"),
         "request": MessageLookupByLibrary.simpleMessage("Żądanie"),
         "requestAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("Żądanie% 1% 2"),
+            MessageLookupByLibrary.simpleMessage("Żądanie %1 %2"),
         "requestError": MessageLookupByLibrary.simpleMessage(
             "Żądanie nie powiodło się: Ten użytkownik nie ma zainstalowanego Nautilusa lub ma wyłączone powiadomienia."),
         "requestFrom": MessageLookupByLibrary.simpleMessage("Prośba od"),
@@ -771,6 +775,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "retry": MessageLookupByLibrary.simpleMessage("Ponów próbę"),
         "rootWarning": MessageLookupByLibrary.simpleMessage(
             "Wygląda na to, że twoje urządzenie zostało zmodyfikowane. Jest rekomendowane żeby zresetować urządzenie do oryginalnego stanu przed kontynuacją."),
+        "save": MessageLookupByLibrary.simpleMessage("Ratować"),
         "scanInstructions":
             MessageLookupByLibrary.simpleMessage("Zeskanuj  \naddres Kod QR "),
         "scanNFC": MessageLookupByLibrary.simpleMessage("Wyślij przez NFC"),
@@ -809,7 +814,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Nie mogę żądać od siebie"),
         "send": MessageLookupByLibrary.simpleMessage("Wyślij"),
         "sendAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("Wyślij %1 Nano?"),
+            MessageLookupByLibrary.simpleMessage("Wyślij %1 %2?"),
         "sendAmounts": MessageLookupByLibrary.simpleMessage("Wyślij kwoty"),
         "sendError": MessageLookupByLibrary.simpleMessage(
             "Wystąpił błąd. Spróbuj póżniej"),
@@ -1035,6 +1040,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "watchOnlySendDisabled": MessageLookupByLibrary.simpleMessage(
             "Wysyłanie jest wyłączone na adresach tylko na zegarku"),
         "weekAgo": MessageLookupByLibrary.simpleMessage("Tydzień temu"),
+        "weekly": MessageLookupByLibrary.simpleMessage("Co tydzień"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
             "Witam w Nautilus. Żeby kontynuować, możesz stworzyć nowy portfel albo importować go."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(

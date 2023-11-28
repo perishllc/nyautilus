@@ -672,6 +672,11 @@
     "type": "text",
     "description": "change_representative_current_header"
   },
+  "daily": "毎日",
+  "@daily": {
+    "type": "text",
+    "description": "frequency_daily"
+  },
   "dayAgo": "昨日",
   "@dayAgo": {
     "type": "text",
@@ -1137,6 +1142,10 @@
     "type": "text",
     "description": "funding_header"
   },
+  "generatingWork": "PoW を生成しています。これにはしばらく時間がかかる場合があります (20 秒以上)。",
+  "@generatingWork": {
+    "description": "generating_local_work"
+  },
   "getCurrency": "%2 を取得",
   "@getCurrency": {
     "type": "text",
@@ -1576,6 +1585,11 @@
   "@mnemonicSizeError2": {
     "type": "text",
     "description": "err"
+  },
+  "monthly": "毎月",
+  "@monthly": {
+    "type": "text",
+    "description": "frequency_monthly"
   },
   "monthlyServerCosts": "月額サーバー費用",
   "@monthlyServerCosts": {
@@ -2316,6 +2330,11 @@
   "@rootWarning": {
     "type": "text",
     "description": "Shown to users if they have a rooted Android device or jailbroken iOS device"
+  },
+  "save": "保存",
+  "@save": {
+    "type": "text",
+    "description": "dialog_save"
   },
   "scanInstructions": "ナノ \n アドレスのQRコードをスキャンします",
   "@scanInstructions": {
@@ -3146,6 +3165,11 @@
   "@weekAgo": {
     "type": "text",
     "description": "history_week_ago"
+  },
+  "weekly": "毎週",
+  "@weekly": {
+    "type": "text",
+    "description": "frequency_weekly"
   },
   "welcomeText": "ナトリアムへようこそ。最初に、新しいウォレットを作成するか、既存のウォレットをインポートします。",
   "@welcomeText": {

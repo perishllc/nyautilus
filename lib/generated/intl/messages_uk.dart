@@ -107,7 +107,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "blockUser": MessageLookupByLibrary.simpleMessage(
             "Заблокувати цього користувача"),
         "blockedAdded":
-            MessageLookupByLibrary.simpleMessage("% 1 успішно заблоковано."),
+            MessageLookupByLibrary.simpleMessage("%1 успішно заблоковано."),
         "blockedExists": MessageLookupByLibrary.simpleMessage(
             "Користувач вже заблокований!"),
         "blockedHeader": MessageLookupByLibrary.simpleMessage("Заблоковано"),
@@ -120,7 +120,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "blockedNameMissing":
             MessageLookupByLibrary.simpleMessage("Виберіть назву псевдоніма"),
         "blockedRemoved":
-            MessageLookupByLibrary.simpleMessage("% 1 розблоковано!"),
+            MessageLookupByLibrary.simpleMessage("%1 розблоковано!"),
         "branchConnectErrorLongDesc": MessageLookupByLibrary.simpleMessage(
             "Здається, ми не можемо отримати доступ до Branch API, зазвичай це спричинено якоюсь проблемою з мережею або VPN, що блокує з’єднання.\n\n Ви все ще зможете користуватися програмою як зазвичай, однак надсилання й отримання подарункових карток може не працювати."),
         "branchConnectErrorShortDesc": MessageLookupByLibrary.simpleMessage(
@@ -249,6 +249,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Виберіть, в якій одиниці відображати суми.\n1 ньяно = 0,000001 НАНО, або \n1,000,000 ньяно = 1 НАНО"),
         "currentlyRepresented":
             MessageLookupByLibrary.simpleMessage("На разі представлено"),
+        "daily": MessageLookupByLibrary.simpleMessage("Щодня"),
         "dayAgo": MessageLookupByLibrary.simpleMessage("День тому"),
         "decryptionError":
             MessageLookupByLibrary.simpleMessage("Помилка розшифровки!"),
@@ -386,8 +387,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Введіть назву псевдоніма"),
         "favoriteNameMissing": MessageLookupByLibrary.simpleMessage(
             "Виберіть назву для цього Улюбленця"),
-        "favoriteRemoved": MessageLookupByLibrary.simpleMessage(
-            "% 1 було вилучено з обраних!"),
+        "favoriteRemoved":
+            MessageLookupByLibrary.simpleMessage("%1 було вилучено з обраних!"),
         "favoritesHeader": MessageLookupByLibrary.simpleMessage("Вибране"),
         "featured": MessageLookupByLibrary.simpleMessage("Рекомендовані"),
         "fewDaysAgo":
@@ -407,6 +408,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fundingBannerHeader":
             MessageLookupByLibrary.simpleMessage("Банер фінансування"),
         "fundingHeader": MessageLookupByLibrary.simpleMessage("Фінансування"),
+        "generatingWork": MessageLookupByLibrary.simpleMessage(
+            "Генерація PoW, це може зайняти деякий час (> 20 секунд)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("Отримати %2"),
         "getNano": MessageLookupByLibrary.simpleMessage("Отримати NANO"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("У вас є подарунок!"),
@@ -542,7 +545,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Повідомлення скопійовано"),
         "messageHeader": MessageLookupByLibrary.simpleMessage("Повідомлення"),
         "minimumSend": MessageLookupByLibrary.simpleMessage(
-            "Мінімальна сума для пересилання %1 NANO"),
+            "Мінімальна сума для пересилання %1 %2"),
         "minuteAgo": MessageLookupByLibrary.simpleMessage("Хвилину тому"),
         "mnemonicInvalidWord":
             MessageLookupByLibrary.simpleMessage("%1 неправильне слово"),
@@ -552,6 +555,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Секретна фраза складається  із точно 24х слів"),
         "mnemonicSizeError2": MessageLookupByLibrary.simpleMessage(
             "Секретна фраза може містити лише 12 або 24 слова"),
+        "monthly": MessageLookupByLibrary.simpleMessage("Щомісяця"),
         "monthlyServerCosts":
             MessageLookupByLibrary.simpleMessage("Щомісячні витрати на сервер"),
         "moonpay": MessageLookupByLibrary.simpleMessage("MoonPay"),
@@ -595,7 +599,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "notificationInfo": MessageLookupByLibrary.simpleMessage(
             "Щоб ця функція працювала коректно, повідомлення повинні бути включені"),
         "notificationTitle":
-            MessageLookupByLibrary.simpleMessage("Отримано %1 NANO"),
+            MessageLookupByLibrary.simpleMessage("Отримано %1 %2"),
         "notificationWarning":
             MessageLookupByLibrary.simpleMessage("Сповіщення вимкнено"),
         "notificationWarningBodyLong": MessageLookupByLibrary.simpleMessage(
@@ -742,7 +746,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Чи дійсно ви бажаєте приховати цей профіль? Ви зможете його побачити торкнувши кнопку \"%1\"."),
         "removeBlocked": MessageLookupByLibrary.simpleMessage("Розблокувати"),
         "removeBlockedConfirmation": MessageLookupByLibrary.simpleMessage(
-            "Ви справді бажаєте розблокувати% 1?"),
+            "Ви справді бажаєте розблокувати %1?"),
         "removeContact":
             MessageLookupByLibrary.simpleMessage("Видалити контакт"),
         "removeContactConfirmation": MessageLookupByLibrary.simpleMessage(
@@ -759,7 +763,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "representatives": MessageLookupByLibrary.simpleMessage("Представники"),
         "request": MessageLookupByLibrary.simpleMessage("Запит"),
         "requestAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("Запит% 1% 2"),
+            MessageLookupByLibrary.simpleMessage("Запит %1 %2"),
         "requestError": MessageLookupByLibrary.simpleMessage(
             "Помилка запиту: Здається, у цього користувача не встановлено Nautilus або вимкнено сповіщення."),
         "requestFrom": MessageLookupByLibrary.simpleMessage("Запит від"),
@@ -793,6 +797,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "retry": MessageLookupByLibrary.simpleMessage("Повторити спробу"),
         "rootWarning": MessageLookupByLibrary.simpleMessage(
             "Схоже що ваш прилад \"rooted\", \"jailbroken\", чи модифікований настільки, що це небезпечно. Рекомендовано повернути фабричні установки вашому приладу перед продовженням."),
+        "save": MessageLookupByLibrary.simpleMessage("зберегти"),
         "scanInstructions": MessageLookupByLibrary.simpleMessage(
             "Сканувати QR код \n NANO адреси"),
         "scanNFC": MessageLookupByLibrary.simpleMessage("Надіслати через NFC"),
@@ -829,7 +834,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Не можу подати запит від себе"),
         "send": MessageLookupByLibrary.simpleMessage("Надіслати"),
         "sendAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("Надіслати %1 Nano"),
+            MessageLookupByLibrary.simpleMessage("Надіслати %1 %2"),
         "sendAmounts": MessageLookupByLibrary.simpleMessage("Відправити суми"),
         "sendError": MessageLookupByLibrary.simpleMessage(
             "Сталася помилка. Спробуйте ще раз пізніше."),
@@ -979,7 +984,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferComplete": MessageLookupByLibrary.simpleMessage(
             "%1 NANO успішно переказано до вашого гаманця Nautilus. \n"),
         "transferConfirmInfo": MessageLookupByLibrary.simpleMessage(
-            "Знайдено гаманець з балансом %1 NANO . \n"),
+            "Знайдено гаманець з балансом %1 %2 . \n"),
         "transferConfirmInfoSecond": MessageLookupByLibrary.simpleMessage(
             "Натисніть сюди щоб підтвердити переказ коштів. \n"),
         "transferConfirmInfoThird": MessageLookupByLibrary.simpleMessage(
@@ -1067,6 +1072,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "watchOnlySendDisabled": MessageLookupByLibrary.simpleMessage(
             "Надсилання вимкнено на адресах лише для перегляду"),
         "weekAgo": MessageLookupByLibrary.simpleMessage("Тиждень тому"),
+        "weekly": MessageLookupByLibrary.simpleMessage("Щотижня"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
             "Ласкаво просимо до Nautilus. Щоб продовжити ви можете створити новий гаманець або імпортувати існуючий."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(

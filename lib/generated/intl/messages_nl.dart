@@ -247,13 +247,14 @@ class MessageLookup extends MessageLookupByLibrary {
             "Kies in welke eenheid de bedragen moeten worden weergegeven.\n1 nyano = 0,000001 NANO, of \n1.000.000 nyano = 1 NANO"),
         "currentlyRepresented": MessageLookupByLibrary.simpleMessage(
             "Jouw huidige vertegenwoordiger is"),
+        "daily": MessageLookupByLibrary.simpleMessage("Dagelijks"),
         "dayAgo": MessageLookupByLibrary.simpleMessage("Een dag geleden"),
         "decryptionError":
             MessageLookupByLibrary.simpleMessage("Decryption-fout!"),
         "defaultAccountName":
             MessageLookupByLibrary.simpleMessage("Hoofd Account"),
         "defaultGiftMessage": MessageLookupByLibrary.simpleMessage(
-            "Kijk eens naar Nautilus! Ik heb je wat nano gestuurd met deze link:"),
+            "Kijk eens naar Nautilus! Ik heb je wat %2 gestuurd met deze link:"),
         "defaultNewAccountName":
             MessageLookupByLibrary.simpleMessage("Account %1"),
         "delete": MessageLookupByLibrary.simpleMessage("Verwijderen"),
@@ -404,6 +405,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fundingBannerHeader":
             MessageLookupByLibrary.simpleMessage("Financieringsbanner"),
         "fundingHeader": MessageLookupByLibrary.simpleMessage("Financiering"),
+        "generatingWork": MessageLookupByLibrary.simpleMessage(
+            "PoW genereren, dit kan even duren (> 20 seconden)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("Krijg %2"),
         "getNano": MessageLookupByLibrary.simpleMessage("Krijg NANO"),
         "giftAlert":
@@ -538,7 +541,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Bericht gekopieerd"),
         "messageHeader": MessageLookupByLibrary.simpleMessage("Bericht"),
         "minimumSend": MessageLookupByLibrary.simpleMessage(
-            "Het minimum te verzenden bedrag is %1 NANO"),
+            "Het minimum te verzenden bedrag is %1 %2"),
         "minuteAgo": MessageLookupByLibrary.simpleMessage("Een minuut geleden"),
         "mnemonicInvalidWord":
             MessageLookupByLibrary.simpleMessage("%1 is geen geldig woord"),
@@ -547,6 +550,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "De geheime zin mag slechts 24 woorden bevatten"),
         "mnemonicSizeError2": MessageLookupByLibrary.simpleMessage(
             "Geheime zin mag slechts 12 of 24 woorden bevatten"),
+        "monthly": MessageLookupByLibrary.simpleMessage("Maandelijks"),
         "monthlyServerCosts":
             MessageLookupByLibrary.simpleMessage("Maandelijkse serverkosten"),
         "moonpay": MessageLookupByLibrary.simpleMessage("MoonPay"),
@@ -785,6 +789,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "retry": MessageLookupByLibrary.simpleMessage("Probeer het opnieuw"),
         "rootWarning": MessageLookupByLibrary.simpleMessage(
             "Het lijkt erop dat jouw apparaat is \"geroot\", \"gejailbreakt\" of is aangepast op een manier die de beveiliging in gevaar brengt. Het wordt aanbevolen dat je jouw apparaat in de oorspronkelijke staat reset voordat je doorgaat."),
+        "save": MessageLookupByLibrary.simpleMessage("Redden"),
         "scanInstructions": MessageLookupByLibrary.simpleMessage(
             "Scan een Nano\nadres QR code"),
         "scanNFC": MessageLookupByLibrary.simpleMessage("Verzenden via NFC"),
@@ -820,7 +825,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Kan niet zelf vragen"),
         "send": MessageLookupByLibrary.simpleMessage("Verstuur"),
         "sendAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("Verstuur %1 Nano"),
+            MessageLookupByLibrary.simpleMessage("Verstuur %1 %2"),
         "sendAmounts":
             MessageLookupByLibrary.simpleMessage("Bedragen verzenden"),
         "sendError": MessageLookupByLibrary.simpleMessage(
@@ -1046,6 +1051,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "watchOnlySendDisabled": MessageLookupByLibrary.simpleMessage(
             "Verzenden is uitgeschakeld op alleen-kijken-adressen"),
         "weekAgo": MessageLookupByLibrary.simpleMessage("Een week geleden"),
+        "weekly": MessageLookupByLibrary.simpleMessage("Wekelijks"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
             "Welkom bij Nautilus. Creëer een nieuwe wallet of importeer een bestaande wallet om verder te gaan."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(

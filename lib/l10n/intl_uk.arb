@@ -235,7 +235,7 @@
     "type": "text",
     "description": "settings_fingerprint_method"
   },
-  "blockedAdded": "% 1 успішно заблоковано.",
+  "blockedAdded": "%1 успішно заблоковано.",
   "@blockedAdded": {
     "type": "text",
     "description": "blocked_added"
@@ -270,7 +270,7 @@
     "type": "text",
     "description": "blocked_name_missing"
   },
-  "blockedRemoved": "% 1 розблоковано!",
+  "blockedRemoved": "%1 розблоковано!",
   "@blockedRemoved": {
     "type": "text",
     "description": "blocked_removed"
@@ -672,6 +672,11 @@
     "type": "text",
     "description": "change_representative_current_header"
   },
+  "daily": "Щодня",
+  "@daily": {
+    "type": "text",
+    "description": "frequency_daily"
+  },
   "dayAgo": "День тому",
   "@dayAgo": {
     "type": "text",
@@ -1072,7 +1077,7 @@
     "type": "text",
     "description": "favorite_name_missing"
   },
-  "favoriteRemoved": "% 1 було вилучено з обраних!",
+  "favoriteRemoved": "%1 було вилучено з обраних!",
   "@favoriteRemoved": {
     "type": "text",
     "description": "favorite_removed"
@@ -1136,6 +1141,10 @@
   "@fundingHeader": {
     "type": "text",
     "description": "funding_header"
+  },
+  "generatingWork": "Генерація PoW, це може зайняти деякий час (> 20 секунд)...",
+  "@generatingWork": {
+    "description": "generating_local_work"
   },
   "getCurrency": "Отримати %2",
   "@getCurrency": {
@@ -1547,7 +1556,7 @@
     "type": "text",
     "description": "message_header"
   },
-  "minimumSend": "Мінімальна сума для пересилання %1 NANO",
+  "minimumSend": "Мінімальна сума для пересилання %1 %2",
   "@minimumSend": {
     "type": "text",
     "description": "send_minimum_error"
@@ -1576,6 +1585,11 @@
   "@mnemonicSizeError2": {
     "type": "text",
     "description": "err"
+  },
+  "monthly": "Щомісяця",
+  "@monthly": {
+    "type": "text",
+    "description": "frequency_monthly"
   },
   "monthlyServerCosts": "Щомісячні витрати на сервер",
   "@monthlyServerCosts": {
@@ -1712,7 +1726,7 @@
     "type": "text",
     "description": "notifications_settings"
   },
-  "notificationTitle": "Отримано %1 NANO",
+  "notificationTitle": "Отримано %1 %2",
   "@notificationTitle": {
     "type": "text",
     "description": "notification_title"
@@ -2167,7 +2181,7 @@
     "type": "text",
     "description": "blocked_remove_btn"
   },
-  "removeBlockedConfirmation": "Ви справді бажаєте розблокувати% 1?",
+  "removeBlockedConfirmation": "Ви справді бажаєте розблокувати %1?",
   "@removeBlockedConfirmation": {
     "type": "text",
     "description": "blocked_remove_sure"
@@ -2217,7 +2231,7 @@
     "type": "text",
     "description": "home_request_cta"
   },
-  "requestAmountConfirm": "Запит% 1% 2",
+  "requestAmountConfirm": "Запит %1 %2",
   "@requestAmountConfirm": {
     "type": "text",
     "description": "request_pin_description"
@@ -2316,6 +2330,11 @@
   "@rootWarning": {
     "type": "text",
     "description": "Shown to users if they have a rooted Android device or jailbroken iOS device"
+  },
+  "save": "зберегти",
+  "@save": {
+    "type": "text",
+    "description": "dialog_save"
   },
   "scanInstructions": "Сканувати QR код \n NANO адреси",
   "@scanInstructions": {
@@ -2427,7 +2446,7 @@
     "type": "text",
     "description": "home_send_cta"
   },
-  "sendAmountConfirm": "Надіслати %1 Nano",
+  "sendAmountConfirm": "Надіслати %1 %2",
   "@sendAmountConfirm": {
     "type": "text",
     "description": "send_amount_confirm"
@@ -2892,7 +2911,7 @@
     "type": "text",
     "description": "transfer_complete_text"
   },
-  "transferConfirmInfo": "Знайдено гаманець з балансом %1 NANO . \n",
+  "transferConfirmInfo": "Знайдено гаманець з балансом %1 %2 . \n",
   "@transferConfirmInfo": {
     "type": "text",
     "description": "transfer_confirm_info_first"
@@ -3146,6 +3165,11 @@
   "@weekAgo": {
     "type": "text",
     "description": "history_week_ago"
+  },
+  "weekly": "Щотижня",
+  "@weekly": {
+    "type": "text",
+    "description": "frequency_weekly"
   },
   "welcomeText": "Ласкаво просимо до Nautilus. Щоб продовжити ви можете створити новий гаманець або імпортувати існуючий.",
   "@welcomeText": {

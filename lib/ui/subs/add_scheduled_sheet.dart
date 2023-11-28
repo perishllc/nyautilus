@@ -148,7 +148,9 @@ class AddScheduledSheetState extends State<AddScheduledSheet> {
           return;
         }
         // check if UD / ENS / opencap / onchain address:
-        if (_addressController.text.isNotEmpty && !_addressController.text.contains("★")) {
+        if (_addressController.text.isNotEmpty &&
+            !_addressController.text.contains("★") &&
+            !_addressController.text.startsWith(NonTranslatable.currencyPrefix)) {
           User? user = await sl.get<DBHelper>().getUserOrContactWithName(_addressController.text);
           if (user == null) {
             if (!mounted) return;
@@ -580,82 +582,13 @@ class AddScheduledSheetState extends State<AddScheduledSheet> {
     );
   }
 
-  Future<void> pickTime() async {
-    _timestampValidationText = "";
-    // final DateTime? pickedDate = await showRoundedDatePicker(
-    //   context: context,
-    //   height: 300,
-    //   initialDate: _timestamp != 0 ? DateTime.fromMillisecondsSinceEpoch(_timestamp * 1000) : DateTime.now(),
-    //   firstDate: DateTime(DateTime.now().hour + 1),
-    //   lastDate: DateTime(DateTime.now().year + 3),
-    //   theme: ThemeData(
-    //     dialogBackgroundColor: StateContainer.of(context).curTheme.backgroundDarkest,
-    //     primaryColor: StateContainer.of(context).curTheme.primary,
-    //     textTheme: TextTheme(
-    //       bodyLarge: TextStyle(
-    //         color: StateContainer.of(context).curTheme.text,
-    //       ),
-    //       bodyMedium: TextStyle(
-    //         color: StateContainer.of(context).curTheme.text,
-    //       ),
-    //       bodySmall: TextStyle(
-    //         color: StateContainer.of(context).curTheme.primary60,
-    //       ),
-    //     ),
-    //   ),
-    // );
+  Future<void> _pickTime() async {
+    setState(() {
+      _timestampValidationText = "";
+    });
     DateTime? pickedDate = DateTime.now();
-    // await CupertinoRoundedDatePicker.show(
-    //   context,
-    //   fontFamily: "Mali",
-    //   textColor: StateContainer.of(context).curTheme.text!,
-    //   background: StateContainer.of(context).curTheme.background!,
-    //   borderRadius: 16,
-    //   initialDatePickerMode: CupertinoDatePickerMode.time,
-    //   use24hFormat: true,
-    //   initialDate: _timestamp != 0 ? DateTime.fromMillisecondsSinceEpoch(_timestamp * 1000) : DateTime.now(),
-    //   onDateTimeChanged: (DateTime newDateTime) {
-    //     pickedDate = newDateTime;
-    //   },
-    // );
     if (!mounted) return;
     if (pickedDate != null) {
-      // final TimeOfDay? pickedTime = await showRoundedTimePicker(
-      //   context: context,
-      //   initialTime: _timestamp != 0
-      //       ? TimeOfDay.fromDateTime(DateTime.fromMillisecondsSinceEpoch(_timestamp * 1000))
-      //       : TimeOfDay.now(),
-      //   theme: ThemeData(
-      //     dialogBackgroundColor: StateContainer.of(context).curTheme.backgroundDarkest,
-      //     primaryColor: StateContainer.of(context).curTheme.primary,
-      //     textTheme: TextTheme(
-      //       bodyLarge: TextStyle(
-      //         color: StateContainer.of(context).curTheme.text,
-      //       ),
-      //       bodyMedium: TextStyle(
-      //         color: StateContainer.of(context).curTheme.text,
-      //       ),
-      //       bodySmall: TextStyle(
-      //         color: StateContainer.of(context).curTheme.text,
-      //       ),
-      //     ),
-      //   ),
-      // );
-      // TimeOfDay? pickedTime = TimeOfDay.now();
-      // await CupertinoRoundedDatePicker.show(
-      //   context,
-      //   fontFamily: "Mali",
-      //   textColor: StateContainer.of(context).curTheme.text!,
-      //   background: StateContainer.of(context).curTheme.background!,
-      //   borderRadius: 16,
-      //   initialDatePickerMode: CupertinoDatePickerMode.time,
-      //   use24hFormat: true,
-      //   initialDate: _timestamp != 0 ? DateTime.fromMillisecondsSinceEpoch(_timestamp * 1000) : DateTime.now(),
-      //   onDateTimeChanged: (DateTime newDateTime) {
-      //     pickedTime = TimeOfDay.fromDateTime(newDateTime);
-      //   },
-      // );
-
       DateTime? pickedDateTime = await showOmniDateTimePicker(
         context: context,
         initialDate: DateTime.now(),
@@ -671,15 +604,6 @@ class AddScheduledSheetState extends State<AddScheduledSheet> {
           useMaterial3: true,
           colorSchemeSeed: StateContainer.of(context).curTheme.primary,
           brightness: StateContainer.of(context).curTheme.brightness,
-          // colorScheme: ColorScheme.fromSwatch().copyWith(
-          // //   secondary: StateContainer.of(context).curTheme.primary10,
-          //   brightness: StateContainer.of(context).curTheme.brightness,
-          // //   error: StateContainer.of(context).curTheme.error,
-          //   primary: StateContainer.of(context).curTheme.primary,
-          // //   background: StateContainer.of(context).curTheme.background,
-          // //   tertiary: StateContainer.of(context).curTheme.warning,
-
-          // ),
         ),
         type: OmniDateTimePickerType.dateAndTime,
         borderRadius: const BorderRadius.all(Radius.circular(16)),
@@ -707,14 +631,7 @@ class AddScheduledSheetState extends State<AddScheduledSheet> {
       );
 
       if (pickedDateTime != null) {
-        // final DateTime finalDateTime = DateTime(
-        //   pickedDate?.year ?? 0,
-        //   pickedDate?.month ?? 0,
-        //   pickedDate?.day ?? 0,
-        //   pickedTime?.hour ?? 0,
-        //   pickedTime?.minute ?? 0,
-        // );
-        final DateTime finalDateTime = pickedDateTime!;
+        final DateTime finalDateTime = pickedDateTime;
         setState(() {
           _timestamp = finalDateTime.millisecondsSinceEpoch ~/ 1000;
         });
@@ -792,23 +709,23 @@ class AddScheduledSheetState extends State<AddScheduledSheet> {
                         children: <Widget>[
                           Stack(
                             children: <Widget>[
-                              // // Column for Enter Name container + Enter Name Error container
-                              // Column(
-                              //   children: [
-                              //     getEnterNameContainer(),
-                              //     Container(
-                              //       alignment: AlignmentDirectional.center,
-                              //       margin: const EdgeInsets.only(top: 3),
-                              //       child: Text(_nameValidationText,
-                              //           style: TextStyle(
-                              //             fontSize: 14.0,
-                              //             color: StateContainer.of(context).curTheme.primary,
-                              //             fontFamily: "NunitoSans",
-                              //             fontWeight: FontWeight.w600,
-                              //           )),
-                              //     ),
-                              //   ],
-                              // ),
+                              // Column for Enter Name container + Enter Name Error container
+                              Column(
+                                children: [
+                                  getEnterNameContainer(),
+                                  Container(
+                                    alignment: AlignmentDirectional.center,
+                                    margin: const EdgeInsets.only(top: 3),
+                                    child: Text(_nameValidationText,
+                                        style: TextStyle(
+                                          fontSize: 14.0,
+                                          color: StateContainer.of(context).curTheme.primary,
+                                          fontFamily: "NunitoSans",
+                                          fontWeight: FontWeight.w600,
+                                        )),
+                                  ),
+                                ],
+                              ),
 
                               // Column for Enter Address container + Enter Address Error container
                               Column(
@@ -847,9 +764,9 @@ class AddScheduledSheetState extends State<AddScheduledSheet> {
                                                         itemBuilder: (BuildContext context, int index) {
                                                           return Misc.buildUserItem(context, _users[index], true,
                                                               (User user) {
-                                                            _addressController!.text =
+                                                            _addressController.text =
                                                                 user.getDisplayName(ignoreNickname: true)!;
-                                                            _addressFocusNode!.unfocus();
+                                                            _addressFocusNode.unfocus();
                                                             setState(() {
                                                               _isUser = true;
                                                               _pasteButtonVisible = false;
@@ -951,31 +868,16 @@ class AddScheduledSheetState extends State<AddScheduledSheet> {
                             children: [
                               const SizedBox(height: 10), // spacer
 
-                              // pick date and time button:
-                              // Container(
-                              //   alignment: Alignment.topCenter,
-                              //   child: AppButton.buildAppButton(
-                              //     context,
-                              //     AppButtonType.PRIMARY,
-                              //     Z.of(context).pickTime,
-                              //     Dimens.BUTTON_TOP_DIMENS,
-                              //     onPressed: pickTime,
-                              //   ),
-                              // ),
-
                               // pick a time text and button:
                               Padding(
                                 padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.105),
                                 child: SizedBox(
                                   height: 50,
                                   child: OutlinedButton(
-                                    onPressed: pickTime,
+                                    onPressed: _pickTime,
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        // Container(
-                                        //   onp
-                                        // )
                                         // pick time text:
                                         if (_timestamp == 0)
                                           Text(
@@ -1068,7 +970,7 @@ class AddScheduledSheetState extends State<AddScheduledSheet> {
                         }
 
                         final Scheduled sched = Scheduled(
-                          // label: _nameController.text,
+                          label: _nameController.text,
                           amount_raw: amountRaw,
                           timestamp: _timestamp,
                           address: finalAddress,
@@ -1115,17 +1017,17 @@ class AddScheduledSheetState extends State<AddScheduledSheet> {
   Future<bool> validateForm() async {
     bool isValid = true;
 
-    // // validate name
-    // if (_nameController.text.isEmpty) {
-    //   setState(() {
-    //     _nameValidationText = Z.of(context).nameEmpty;
-    //   });
-    //   isValid = false;
-    // } else {
-    //   setState(() {
-    //     _nameValidationText = "";
-    //   });
-    // }
+    // validate name
+    if (_nameController.text.isEmpty) {
+      setState(() {
+        _nameValidationText = Z.of(context).nameEmpty;
+      });
+      isValid = false;
+    } else {
+      setState(() {
+        _nameValidationText = "";
+      });
+    }
 
     // validate amount
     if (_amountController.text.isEmpty || _amountController.text == "0") {
