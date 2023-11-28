@@ -149,7 +149,7 @@ class StateContainerState extends State<StateContainer> {
   bool nyanoMode = false;
   bool bananoMode = false;
   String currencyMode =
-      CurrencyModeSetting(CurrencyModeOptions.NANO).getDisplayName();
+      CurrencyModeSetting(CurrencyModeOptions.NYANO).getDisplayName();
   // Currently selected account
   Account? selectedAccount =
       Account(id: 1, name: "AB", index: 0, lastAccess: 0, selected: true);

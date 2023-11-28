@@ -503,7 +503,7 @@ class SharedPrefsUtil {
   }
 
   Future<String> getCurrencyMode() async {
-    return await get(currency_mode, defaultValue: CurrencyModeSetting(CurrencyModeOptions.NANO).getDisplayName())
+    return await get(currency_mode, defaultValue: CurrencyModeSetting(CurrencyModeOptions.NYANO).getDisplayName())
         as String;
   }
 
